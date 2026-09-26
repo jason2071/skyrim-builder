@@ -1,11 +1,13 @@
 import {BitArray} from "./bitarray.js";
 import {Perk, PerkTree, perkTrees} from "./data.js";
+import {thaiDescriptions} from "./descriptions-th.js";
 
 let canvas: HTMLCanvasElement | null = null;
 let perkCircleRadius = 3;
 let hoveredPerk: Perk | undefined = undefined;
 let activePerkTreeView: PerkTreeView | undefined = undefined;
 let workspace: Workspace;
+let descriptionLanguage: "en" | "th" = "en";
 
 const TREE_COLS = 3;
 const TREE_PADDING = 5;
@@ -13,6 +15,9 @@ const TREE_WIDTH = 100;
 const TREE_HEIGHT = 127;
 
 export let activePerkLevels: Record<string, number> = {};
+
+const displayDescription = (description: string): string =>
+  descriptionLanguage === "th" ? thaiDescriptions[description] ?? description : description;
 
 // used in unit tests
 export const resetActivePerkLevels = () => {
@@ -440,11 +445,11 @@ class PerkTreeView {
 
       // Perk Description
       ctx.font = '12px Arial';
-      ctx.fillText(hoveredPerk.desc[Math.max(0, activeLevel-1)], 335, 760);
+      ctx.fillText(displayDescription(hoveredPerk.desc[Math.max(0, activeLevel-1)]), 335, 760);
 
       // Next Level Description
       if (activeLevel > 0 && activeLevel < maxLevels) {
-        const t = `Next Rank: ${hoveredPerk.desc[Math.max(0, activeLevel)]}`;
+        const t = `Next Rank: ${displayDescription(hoveredPerk.desc[Math.max(0, activeLevel)])}`;
         const w = ctx.measureText(t).width;
         ctx.fillText(t, 335, 777);
         if (hoveredPerk.req) {
@@ -710,6 +715,16 @@ document.addEventListener("DOMContentLoaded", () => {
       workspace.navigate(`t/${perkTreeId(activePerkTreeView!.model)}/${activeData()}`, true);
     }
   });
+  const languageSelect = document.getElementById("description-language") as HTMLSelectElement | null;
+  if (languageSelect) {
+    descriptionLanguage = localStorage.getItem("description-language") === "th" ? "th" : "en";
+    languageSelect.value = descriptionLanguage;
+    languageSelect.addEventListener("change", () => {
+      descriptionLanguage = languageSelect.value === "th" ? "th" : "en";
+      localStorage.setItem("description-language", descriptionLanguage);
+      redraw();
+    });
+  }
   document.getElementById('download-reset')?.addEventListener("click", () => {
     window.open(`data:application/octet-stream,${encodeURI(getResetCode())}`);
   });

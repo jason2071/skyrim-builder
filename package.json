@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "tsc && cp static/* build/",
+    "dev": "nodemon --watch src --watch static --ext ts,html,css --exec \"npm run build && npm run server\"",
     "test": "jest",
     "test:dev": "jest --watchAll",
     "server": "http-server build"
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "http-server": "^14.0.0",
+    "nodemon": "^3.1.10",
     "typescript": "^4.5.4"
   },
   "dependencies": {

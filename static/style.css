@@ -30,10 +30,6 @@ button:active {
   background: rgb(0,0,0);
 }
 
-#help, #download-reset, #download-addperks {
-  float: right;
-}
-
 h1 {
   font-size: 24px;
   margin: 10px auto;
@@ -46,31 +42,66 @@ h1 {
 .toolbar {
   background: rgb(30,30,30);
   border: 1px solid rgb(50,50,50);
+  box-sizing: border-box;
+  display: flex;
   font-size: 12px;
-  height: 30px;
+  justify-content: space-between;
   margin: 0 auto;
+  min-height: 40px;
   padding: 5px 10px;
   text-align: left;
-  width: 970px;
+  width: 990px;
 }
 
-.caption {
-  margin: 8px 10px;
-  float: left;
+.toolbar-actions {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+
+.perk-counter {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
 }
 
 #active-perks {
-  display: block;
-  float: left;
-  margin: 8px 8px 0 0;
+  display: inline-block;
+  margin: 0;
   text-align: center;
   width: 25px;
   font-weight: bold;
 }
 
-.clear-perks {
-  display: none;
-  float: left;
+.language-picker {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.language-picker select {
+  background: rgb(20,20,20);
+  border: 1px solid rgb(70,70,70);
+  color: rgb(220,220,220);
+  cursor: pointer;
+  padding: 5px 7px;
+}
+
+@media (max-width: 1000px) {
+  h1, .toolbar {
+    width: calc(100% - 20px);
+  }
+
+  .toolbar {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .toolbar-actions--right {
+    flex-wrap: wrap;
+  }
 }
 
 .footer {

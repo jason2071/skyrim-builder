@@ -13,11 +13,21 @@
       <canvas id="canvas" width="1000" height="800"></canvas>
       <br />
       <div class="toolbar">
-        <button id="download-addperks">Download "addperks" Script</button>
-        <button id="download-reset">Download "reset" Script</button>
-        <button id="help">Help</button>
-        <div class="caption">Active Perks:</div><div id="active-perks">0</div>
-        <button id="clear-perks">Clear All</button>
+        <div class="toolbar-actions toolbar-actions--left">
+          <div class="perk-counter"><span>Active Perks:</span><strong id="active-perks">0</strong></div>
+          <button id="clear-perks">Clear All</button>
+        </div>
+        <div class="toolbar-actions toolbar-actions--right">
+          <label class="language-picker" for="description-language">Description
+            <select id="description-language" aria-label="Perk description language">
+              <option value="en">English</option>
+              <option value="th">ไทย</option>
+            </select>
+          </label>
+          <button id="download-addperks">Download "addperks" Script</button>
+          <button id="download-reset">Download "reset" Script</button>
+          <button id="help">Help</button>
+        </div>
       </div>
       <div class="footer">
       <a href="https://github.com/chrizel/skyrim">GitHub Project</a>
