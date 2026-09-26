@@ -630,7 +630,7 @@ document.addEventListener("DOMContentLoaded", () => {
         downloadScript("addperks.txt", getAddPerksCode());
     });
     (_d = document.getElementById('help')) === null || _d === void 0 ? void 0 : _d.addEventListener("click", () => {
-        window.location.assign("respec.html");
+        window.open("respec.html", "_blank", "noopener");
     });
     canvas.addEventListener("mousemove", moveHandler);
     canvas.addEventListener("mousedown", downHandler);
