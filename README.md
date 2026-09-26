@@ -1,24 +1,40 @@
-# Skyrim Perk Calculator and Respec Tool
+# Skyrim Perk Builder
 
-This project is based on [chrizel/skyrim](https://github.com/chrizel/skyrim), the original source repository for the Skyrim perk calculator at [chrizel.github.io/skyrim/](https://chrizel.github.io/skyrim/).
+วางแผน Perk ของ Skyrim → ส่งออกไฟล์คำสั่ง Console → นำ build ไปใช้ในเกม PC โดยเลือกดูคำอธิบาย Perk เป็นภาษาอังกฤษหรือไทยได้ทีละภาษา
 
-## Attribution
+โปรเจกต์นี้พัฒนาต่อจาก [chrizel/skyrim](https://github.com/chrizel/skyrim) ของ Christian Zeller; รีโปปัจจุบันคือ [jason2071/skyrim-builder](https://github.com/jason2071/skyrim-builder)
 
-Original project and source code: [chrizel/skyrim](https://github.com/chrizel/skyrim) by [chrizel](https://github.com/chrizel).
+## ทดลองใช้ในเครื่อง
 
-## Build and Development
+ต้องมี [Node.js และ npm](https://nodejs.org/) ก่อนเริ่ม รันคำสั่งจากโฟลเดอร์รีโป:
 
-This project uses [TypeScript](https://www.typescriptlang.org/), so if you make changes to the source code please make them in the TypeScript files under `src/`. GitHub Actions is used to build and deploy the project on every push to [chrizel.github.io/skyrim/](https://chrizel.github.io/skyrim/).
+1. ติดตั้ง dependencies:
 
-To build this project yourself locally you need a current [NodeJS](https://nodejs.org/en/) version.
+   ```sh
+   npm ci
+   ```
 
-After cloning this repository you should run `npm install` inside of the repository root directory to get the latest build dependencies from `package.json`. Then you have the following possibilities:
+   ได้แพ็กเกจตาม `package-lock.json` ใน `node_modules/`
 
-- `npm run build` to build the project.
-- `npm test` to run the unit tests.
-- `npm run test:dev` to run the unit tests in watch mode.
-- `npm run server` to launch a local HTTP server to run the site on your local machine for testing. This requires a build run beforehand.
+2. สร้างไฟล์เว็บและเปิดเซิร์ฟเวอร์ที่รีบิลด์เมื่อแก้ `src/` หรือ `static/`:
 
-## History
+   ```sh
+   npm run dev
+   ```
 
-This project was originally developed in 2011 by using [CoffeeScript](https://coffeescript.org/). At the time, this was one of the preferred tools because it was new, hip and cool. More than ten years later the web has changed and our tools also changed. Beginning of 2022 the original author decided to port the code base over to a more modern foundation using [TypeScript](https://www.typescriptlang.org/) and `package.json` for build dependencies.
+   เปิด `http://localhost:8080/` ในเบราว์เซอร์; ไฟล์เว็บที่สร้างอยู่ใน `build/`
+
+## ใช้งาน
+
+คลิกสายสกิลทางซ้าย แล้วคลิกซ้ายที่ Perk เพื่อเพิ่ม rank หรือคลิกขวาเพื่อลด rank เลือก `English` หรือ `ไทย` ที่ `Descriptions` (เริ่มต้นเป็น English) ระบบเก็บ build ไว้ใน URL hash จึงคัดลอกลิงก์เพื่อเปิด build เดิมได้
+
+กด `Export reset` และ `Export addperks` เพื่อดาวน์โหลด `reset.txt` และ `addperks.txt` จากนั้นเปิด `How to respec` เพื่อดูขั้นตอนใช้ไฟล์ในเกม คู่มือเปิดในแท็บใหม่และมีทั้ง [English](static/respec.html) กับ [ภาษาไทย](static/respec-th.html) **สำรองเซฟก่อนใช้คำสั่ง Console** เพราะ `reset.txt` ล้าง Perk เดิมก่อนใส่ build ใหม่
+
+## ตรวจสอบและเผยแพร่
+
+- `npm run build` คอมไพล์ TypeScript และคัดลอก `static/` ไป `build/`
+- `npm test` รัน Jest หนึ่งครั้ง; `npm run test:dev` รันแบบ watch
+- `npm run server` เปิดเว็บจาก `build/` โดยต้อง build ก่อน
+- GitHub Actions ใน `.github/workflows/deploy.yml` build และเผยแพร่ `build/` ไปสาขา `gh-pages` เมื่อ push ไป `main`
+
+ข้อมูล Perk สองภาษาอ้างอิงจาก [`docs/skyrim_vanilla_perks_en_th.md`](docs/skyrim_vanilla_perks_en_th.md) โค้ดต้นฉบับใช้สัญญาอนุญาต [GPL-3.0-or-later](LICENSE.txt); Skyrim เป็นเครื่องหมายการค้าของ Bethesda Softworks

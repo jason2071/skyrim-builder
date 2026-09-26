@@ -2,32 +2,30 @@
 
 ## Project Structure & Module Organization
 
-- `src/` contains the TypeScript application: `app.ts` manages browser interaction, `data.ts` defines perk trees, and `descriptions-th.ts` maps English perk descriptions to Thai.
-- Tests live beside implementation in `src/*.spec.ts`.
-- `static/` contains deployable assets, including `index.html`, the English `respec.html`, Thai `respec-th.html`, `style.css`, and `favicon.svg`.
-- `docs/skyrim_vanilla_perks_en_th.md` is the bilingual vanilla-perk reference. Treat it as the project source of truth when updating perk behavior or Thai descriptions.
-- `.github/workflows/deploy.yml` builds and deploys pushes to `main`.
+- `src/app.ts` handles the canvas, perk selection, language choice, URL state, and script exports; `src/data.ts` defines perk trees. `src/bitarray.ts` encodes build links.
+- `src/perk-descriptions-th.ts` maps perk names to Thai descriptions; `src/descriptions-th.ts` provides English-description-keyed fallback translations. Tests are colocated in `src/*.spec.ts`.
+- `static/` contains `index.html`, English `respec.html`, Thai `respec-th.html`, `style.css`, and `favicon.svg`. The build copies these files into `build/`.
+- `docs/skyrim_vanilla_perks_en_th.md` is the bilingual vanilla-perk reference. `.github/workflows/deploy.yml` publishes `build/` to `gh-pages` on pushes to `main`.
 
 ## Build, Test, and Development Commands
 
-Run commands from the repository root after `npm ci` or `npm install`:
+Run from the repository root after `npm ci`:
 
-- `npm run build` compiles TypeScript to `build/` and copies `static/` assets.
-- `npm test` runs Jest once.
-- `npm run test:dev` watches and reruns tests.
-- `npm run server` serves `build/` with caching disabled; build first.
-- `npm run dev` watches `src/` and `static/`, then rebuilds and restarts the local server.
+- `npm run dev` watches `src/` and `static/`, rebuilds, and serves the site at `http://localhost:8080/`.
+- `npm run build` compiles TypeScript and copies static assets to `build/`.
+- `npm run server` serves an existing `build/` with caching disabled.
+- `npm test` runs Jest once; `npm run test:dev` watches tests.
 
-## Perk Data and Translation
+## Perk Data, Translation & UI
 
-Keep `data.ts` descriptions in English and preserve perk names, IDs, rank counts, requirements, and tree positions unless verified source data says otherwise. When a description changes, update its exact English-string key in `descriptions-th.ts`; otherwise Thai mode falls back to English.
+Keep English descriptions in `data.ts`. Verify mechanics, ranks, IDs, prerequisites, and numeric values against the bilingual reference before changing them. Preserve proper nouns and game terms such as `Magicka`, `Atronach`, and `Heavy Armor` in Thai text. The Thai display lookup checks `perk-descriptions-th.ts` by perk name first, then `descriptions-th.ts` by exact English description; update the applicable entry when source text changes. English is the default display language.
 
-Use `docs/skyrim_vanilla_perks_en_th.md` to verify values, ranks, and behavior. Keep proper nouns and game terms in English—such as `Magicka`, `Atronach`, `Heavy Armor`, and perk names—while translating only the mechanic. Preserve every numeric value, percentage, condition, and target. For example: `Half damage from falling` means damage from falling from a height, not a generic stumble.
+Keep English footer text, GitHub links, and attribution consistent across all three HTML pages: this repository is `jason2071/skyrim-builder`, and the original is `chrizel/skyrim` by Christian Zeller. Keep the respec guide links and exported filenames (`reset.txt`, `addperks.txt`) aligned with actual UI behavior.
 
-## Coding Style and Tests
+## Coding Style & Testing
 
-Use strict TypeScript with `camelCase` variables/functions and `PascalCase` types/classes. Match nearby formatting; do not introduce unrelated reformatting. Add or update Jest tests for changed behavior, especially perk state, dependencies, and UI coordinate handling. Run `npm test` and `npm run build` before submitting changes.
+Use strict TypeScript, `camelCase` for values/functions, and `PascalCase` for types/classes. Match nearby formatting; avoid unrelated reformatting. Add or update colocated Jest tests for changed perk state, dependencies, export logic, or UI coordinate handling. Run `npm test` and `npm run build` before submitting.
 
-## Commits and Pull Requests
+## Commits & Pull Requests
 
-Use concise imperative subjects, for example `Correct Mage Armor ranks`. Keep `build/` and `node_modules/` out of commits. Pull requests should explain user-visible changes, list verification commands, link relevant issues, and include screenshots for UI updates. Preserve upstream attribution and the GPL-3.0-or-later license.
+Use concise imperative subjects, as in `Correct Mage Armor ranks`. Exclude `build/` and `node_modules/`. PRs should describe visible changes, list verification, link relevant issues, and include screenshots for UI changes. Preserve upstream attribution and the GPL-3.0-or-later license.
