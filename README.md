@@ -1,6 +1,10 @@
 # Skyrim Perk Calculator and Respec Tool
 
-This is the source repository of the Skyrim perk calculator at [chrizel.github.io/skyrim/](https://chrizel.github.io/skyrim/).
+This project is based on [chrizel/skyrim](https://github.com/chrizel/skyrim), the original source repository for the Skyrim perk calculator at [chrizel.github.io/skyrim/](https://chrizel.github.io/skyrim/).
+
+## Attribution
+
+Original project and source code: [chrizel/skyrim](https://github.com/chrizel/skyrim) by [chrizel](https://github.com/chrizel).
 
 ## Build and Development
 
