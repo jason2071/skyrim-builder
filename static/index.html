@@ -7,36 +7,31 @@
         <meta http-equiv="Expires" content="0">
         <script type="module" src="app.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
     </head>
     <body>
-      <h1>Skyrim Perk Calculator and Respec Tool</h1>
-      <canvas id="canvas" width="1000" height="800"></canvas>
-      <br />
+      <main class="app-shell">
+      <header class="app-header"><div><p class="eyebrow">The Elder Scrolls V</p><h1>Skyrim Perk Builder</h1><p class="subtitle">Plan your character, track your perks, and export your build.</p></div><div class="header-mark" aria-hidden="true">✦</div></header>
+      <section class="builder" aria-label="Perk builder"><div class="canvas-frame"><canvas id="canvas" width="1000" height="800"></canvas></div>
       <div class="toolbar">
         <div class="toolbar-actions toolbar-actions--left">
           <div class="perk-counter"><span>Active Perks:</span><strong id="active-perks">0</strong></div>
-          <button id="clear-perks">Clear All</button>
+        <button id="clear-perks">Clear all</button>
         </div>
         <div class="toolbar-actions toolbar-actions--right">
-          <label class="language-picker" for="description-language">Description
+          <label class="language-picker" for="description-language">Descriptions
             <select id="description-language" aria-label="Perk description language">
               <option value="en">English</option>
               <option value="th">ไทย</option>
             </select>
           </label>
-          <button id="download-addperks">Download "addperks" Script</button>
-          <button id="download-reset">Download "reset" Script</button>
-          <button id="help">Help</button>
+          <button id="download-addperks">Export addperks</button>
+          <button id="download-reset">Export reset</button>
+          <button id="help">How to respec</button>
         </div>
       </div>
-      <div class="footer">
-      <a href="https://github.com/chrizel/skyrim">GitHub Project</a>
-      <p>
-      Copyright &copy; 2022 by Christian Zeller
-      </p>
-      <p>
-      Skyrim is a registered trademark of <a href="http://www.bethsoft.com/" target="_blank">Bethesda Softworks</a>.
-      </p>
-      </div>
+      </section>
+      <div class="footer"><a href="https://github.com/chrizel/skyrim">Original project</a><span>•</span><span>Skyrim is a trademark of Bethesda Softworks.</span></div>
+      </main>
     </body>
 </html>

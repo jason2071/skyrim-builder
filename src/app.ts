@@ -1,6 +1,7 @@
 import {BitArray} from "./bitarray.js";
 import {Perk, PerkTree, perkTrees} from "./data.js";
 import {thaiDescriptions} from "./descriptions-th.js";
+import {perkDescriptionsTh} from "./perk-descriptions-th.js";
 
 let canvas: HTMLCanvasElement | null = null;
 let perkCircleRadius = 3;
@@ -16,8 +17,8 @@ const TREE_HEIGHT = 127;
 
 export let activePerkLevels: Record<string, number> = {};
 
-const displayDescription = (description: string): string =>
-  descriptionLanguage === "th" ? thaiDescriptions[description] ?? description : description;
+const displayDescription = (perk: Perk, description: string): string =>
+  descriptionLanguage === "th" ? perkDescriptionsTh[perk.name] ?? thaiDescriptions[description] ?? description : description;
 
 // used in unit tests
 export const resetActivePerkLevels = () => {
@@ -445,11 +446,11 @@ class PerkTreeView {
 
       // Perk Description
       ctx.font = '12px Arial';
-      ctx.fillText(displayDescription(hoveredPerk.desc[Math.max(0, activeLevel-1)]), 335, 760);
+      ctx.fillText(displayDescription(hoveredPerk, hoveredPerk.desc[Math.max(0, activeLevel-1)]), 335, 760);
 
       // Next Level Description
       if (activeLevel > 0 && activeLevel < maxLevels) {
-        const t = `Next Rank: ${displayDescription(hoveredPerk.desc[Math.max(0, activeLevel)])}`;
+        const t = `Next Rank: ${displayDescription(hoveredPerk, hoveredPerk.desc[Math.max(0, activeLevel)])}`;
         const w = ctx.measureText(t).width;
         ctx.fillText(t, 335, 777);
         if (hoveredPerk.req) {
@@ -584,8 +585,9 @@ const downHandler = (e: MouseEvent): void => {
   }
 
   e.preventDefault();
-  const x = e.pageX - canvas.offsetLeft;
-  const y = e.pageY - canvas.offsetTop;
+  const bounds = canvas.getBoundingClientRect();
+  const x = (e.clientX - bounds.left) * (canvas.width / bounds.width);
+  const y = (e.clientY - bounds.top) * (canvas.height / bounds.height);
 
   if (!activePerkTreeView) {
     return;
@@ -619,8 +621,9 @@ const moveHandler = (e: MouseEvent): void => {
     return;
   }
 
-  const x = e.pageX - canvas.offsetLeft;
-  const y = e.pageY - canvas.offsetTop;
+  const bounds = canvas.getBoundingClientRect();
+  const x = (e.clientX - bounds.left) * (canvas.width / bounds.width);
+  const y = (e.clientY - bounds.top) * (canvas.height / bounds.height);
 
   if (activePerkTreeView && activePerkTreeView.hitFrame(x, y)) {
     const perk = activePerkTreeView.perkAtPosition(x, y);
@@ -723,6 +726,7 @@ document.addEventListener("DOMContentLoaded", () => {
       descriptionLanguage = languageSelect.value === "th" ? "th" : "en";
       localStorage.setItem("description-language", descriptionLanguage);
       redraw();
+      languageSelect.blur();
     });
   }
   document.getElementById('download-reset')?.addEventListener("click", () => {
@@ -732,7 +736,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.open(`data:application/octet-stream,${encodeURI(getAddPerksCode())}`);
   });
   document.getElementById('help')?.addEventListener("click", () => {
-    window.open("respec.html");
+    window.location.assign("respec.html");
   });
 
   canvas.addEventListener("mousemove", moveHandler);

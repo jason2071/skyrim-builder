@@ -515,7 +515,7 @@ export const perkTrees: PerkTree[] = [
       }, {
         name: 'Mage Armor',
         levels: 3,
-        desc: ['Protection spells like Stoneflesh are twice as strong if not wearing armor.', 'Protection spells like Stoneflesh are three times as strong if not wearing armor.', 'Protection spells like Stoneflesh are four times as strong if not wearing armor.'],
+        desc: ['Protection spells like Stoneflesh are twice as strong if not wearing armor.', 'Protection spells like Stoneflesh are 2.5 times as strong if not wearing armor.', 'Protection spells like Stoneflesh are three times as strong if not wearing armor.'],
         req: [30, 50, 70],
         pos: [-28, -124],
         deps: [2],
@@ -523,7 +523,7 @@ export const perkTrees: PerkTree[] = [
       }, {
         name: 'Magic Resistance',
         levels: 3,
-        desc: ["Blocks 10% of a spell's effects.", "Blocks 15% of a spell's effects.", "Blocks 20% of a spell's effects."],
+        desc: ["Blocks 10% of a spell's effects.", "Blocks 20% of a spell's effects.", "Blocks 30% of a spell's effects."],
         req: [30, 50, 70],
         pos: [50, -124],
         deps: [2],
@@ -537,7 +537,7 @@ export const perkTrees: PerkTree[] = [
         id: ['000C44B8']
       }, {
         name: 'Stability',
-        desc: ['Alteration spells have greater duration.'],
+        desc: ['Alteration spells have 50% greater duration.'],
         req: [70],
         pos: [-18, -162],
         deps: [5],

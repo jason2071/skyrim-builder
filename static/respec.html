@@ -1,55 +1,43 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Skyrim Respec Tool Help</title>
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Expires" content="0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <style>
-        h1 {
-          text-align: center;
-          margin: 30px 20px;
-          width: auto;
-        }
-
-        #content {
-          margin: 0 auto;
-          text-align: left;
-          width: 600px;
-          font-size: 14px;
-          line-height: 140%;
-        }
-        </style>
-    </head>
-    <body>
-      <h1>Skyrim Respec Tool Help</h1>
-      <div id="content">
-      With this tool you can create Skyrim character builds and download generated script files that contain all Skyrim console commands to change your in-game character to the defined skills. The scripts change the character level and the specific skill tree levels to the required skill level. They set all desired perks for your defined build after resetting all active perks, so all existing perks that you didn't set with this tool are getting reset.
-      <p>
-      The steps here described only work with the PC version of Skyrim!
-      <p>
-      <ol>
-        <li><b>Backup all your save files!</b> I give you no guarantee that anything works or that your game will work after you executed the scripts. Please backup your save files! Normally they are located in C:\Users\&lt;YOUR USERNAME&gt;\My Documents\My Games\Skyrim\Saves\</li>
-        <li>Create your perk build with the tool and click 'Download "reset" Script' on the bottom right corner of the page and save the file in your Skyrim application directory as "<b>reset.txt</b>". Then click 'Download "addperks" Script' and save it in your Skyrim application directory as "<b>addperks.txt</b>". On a Steam installation the Skyrim application directory is located in &lt;STEAM DIRECTORY&gt;\steamapps\common\skyrim\</li>
-        <li>Start Skyrim and load your desired save file to enter the world of Skyrim. Then open the Skyrim console with the <b>~</b> (tilde) key. Enter the following command: <b>bat &quot;reset.txt&quot;</b> and hit return. Then this command: <b>bat &quot;addperks.txt&quot;</b> and hit return. You can hide the console again with the <b>~</b> (tilde) key.
-      </ol>
-      After you executed the scripts your character should have your desired abilities. The scripts change your level and perks, but don't change your attributes i.e. magicka, health and stamina are not affected. If you want to change them you could use the console command "<i>player.setav health 500</i>" etc.
-      <p>
-      <b>Warning: </b>After executing the scripts certain things could break. It is not guaranteed that Steam achievements still work or that anything game related won't break after changing the level and skills with this method. So please make backups and use it only if you are sure what you are doing!
-      <p>
-      <b>Note: </b>We work with two scripts here: <i>reset.txt</i> resets all active perks and is always the same file. <i>addperks.txt</i> then sets the character level and skill levels to the needed values, and activates all desired perks. Why do we do this with two separate files? Well, I tried it with a single script file first, but it didn't work. If one removeperk command is followed by an addperk command for the same perk in the same file, it doesn't seem to add the perk. So that's the reason why we do it with two files and run the <i>bat</i> command in two separate steps. If you create a new character you could skip the reset.txt script.
-      <p>
-      <a href="index.html">Go Back</a>
-      </div>
-      <div class="footer">
-      <a href="https://github.com/chrizel/skyrim">GitHub Project</a>
-      <p>
-      Copyright &copy; 2022 by Christian Zeller
-      </p>
-      <p>
-      Skyrim is a registered trademark of <a href="http://www.bethsoft.com/" target="_blank">Bethesda Softworks</a>.
-      </p>
-      </div>
-    </body>
+<html lang="en">
+  <head>
+    <title>Skyrim Perk Builder — Respec Guide</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  </head>
+  <body>
+    <main class="guide-shell">
+      <header class="guide-header">
+        <p class="eyebrow">Skyrim Perk Builder</p>
+        <h1>Respec Guide</h1>
+        <p class="subtitle">Apply your planned perks safely in game.</p>
+      </header>
+      <article class="guide-content">
+        <p><a href="respec-th.html">อ่านคู่มือภาษาไทย →</a></p>
+        <p>Use this tool to plan a character build and generate Console-command scripts for applying its perks in game.</p>
+        <h2>Planning a build</h2>
+        <ul>
+          <li>Left-click a perk to add a rank; right-click it to remove one.</li>
+          <li>Select a skill tree on the left to view its perks.</li>
+          <li>Choose English or Thai perk descriptions from the toolbar.</li>
+          <li>Use <b>Clear all</b> to remove every selected perk.</li>
+        </ul>
+        <h2>Applying your build in game</h2>
+        <p>These steps require a PC version of Skyrim with the Console enabled.</p>
+        <ol>
+          <li><b>Back up your saves first.</b> They are commonly stored in <code>C:\Users\&lt;username&gt;\Documents\My Games\Skyrim\Saves\</code>.</li>
+          <li>Use <b>Export reset</b> and <b>Export addperks</b>. Save the downloads as <code>reset.txt</code> and <code>addperks.txt</code> in the game directory, for example <code>&lt;Steam&gt;\steamapps\common\Skyrim\</code>.</li>
+          <li>Load the target save, press <b>~</b> to open the Console, then run <code>bat reset</code>. Press Enter, then run <code>bat addperks</code>.</li>
+        </ol>
+        <h2>Important notes</h2>
+        <p><b>Warning:</b> <code>reset.txt</code> removes existing perks before <code>addperks.txt</code> applies the planned build. Console use can affect saves, mods, and achievements, so always keep a backup.</p>
+        <p>The scripts set the required level and perks, but do not change Health, Magicka, or Stamina. Use a Console command such as <code>player.setav health 500</code> if needed.</p>
+        <p><a href="index.html">← Back to Perk Builder</a></p>
+      </article>
+      <footer class="footer">
+        <a href="https://github.com/jason2071/skyrim-builder">GitHub Project</a><span>•</span><a href="https://github.com/chrizel/skyrim">Original project</a>
+      </footer>
+    </main>
+  </body>
 </html>

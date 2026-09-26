@@ -7,11 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "build": "tsc && cp static/* build/",
+    "build": "tsc && copyfiles -u 1 static/* build/",
     "dev": "nodemon --watch src --watch static --ext ts,html,css --exec \"npm run build && npm run server\"",
     "test": "jest",
     "test:dev": "jest --watchAll",
-    "server": "http-server build"
+    "server": "http-server build -c-1"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "homepage": "https://chrizel.github.io/skyrim",
   "devDependencies": {
     "@types/jest": "^27.4.0",
+    "copyfiles": "^2.4.1",
     "http-server": "^14.0.0",
     "nodemon": "^3.1.10",
     "typescript": "^4.5.4"
