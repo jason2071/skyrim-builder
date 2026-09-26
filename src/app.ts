@@ -579,6 +579,15 @@ const getAddPerksCode = (): string => {
   return result.join("\r\n");
 };
 
+const downloadScript = (filename: string, content: string): void => {
+  const url = URL.createObjectURL(new Blob([content], {type: "text/plain"}));
+  const download = document.createElement("a");
+  download.href = url;
+  download.download = filename;
+  download.click();
+  URL.revokeObjectURL(url);
+};
+
 const downHandler = (e: MouseEvent): void => {
   if (!canvas) {
     return;
@@ -730,10 +739,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   document.getElementById('download-reset')?.addEventListener("click", () => {
-    window.open(`data:application/octet-stream,${encodeURI(getResetCode())}`);
+    downloadScript("reset.txt", getResetCode());
   });
   document.getElementById('download-addperks')?.addEventListener("click", () => {
-    window.open(`data:application/octet-stream,${encodeURI(getAddPerksCode())}`);
+    downloadScript("addperks.txt", getAddPerksCode());
   });
   document.getElementById('help')?.addEventListener("click", () => {
     window.location.assign("respec.html");
