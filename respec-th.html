@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>คู่มือใช้งาน Skyrim Perk Builder</title>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    </head>
+    <body>
+      <main class="guide-shell">
+      <header class="guide-header"><p class="eyebrow">Skyrim Perk Builder</p><h1>คู่มือการ Respec</h1><p class="subtitle">วางแผนและนำ Perk build ไปใช้ในเกมอย่างปลอดภัย</p></header>
+      <article id="content" class="guide-content">
+      <p><a class="language-link" href="respec.html">Read this guide in English →</a></p>
+      <p>เครื่องมือนี้ช่วยวางแผน Perk สำหรับตัวละคร และสร้างไฟล์คำสั่ง Console เพื่อปรับตัวละครในเกมตาม build ที่เลือก</p>
+
+      <h2>การวางแผน Build</h2>
+      <ul>
+        <li>คลิกซ้ายที่ Perk เพื่อเพิ่มระดับ และคลิกขวาเพื่อลดระดับ</li>
+        <li>คลิกสายสกิลด้านซ้ายเพื่อเปิดดู Perk ในสายนั้น</li>
+        <li>เลือกภาษา description เป็น English หรือ ไทย จากแถบด้านล่าง</li>
+        <li>กด <b>Clear all</b> เมื่อต้องการล้าง Perk ที่เลือกทั้งหมด</li>
+      </ul>
+
+      <h2>นำ Build ไปใช้ในเกม</h2>
+      <p>ขั้นตอนนี้ใช้ได้กับ Skyrim เวอร์ชัน PC ที่เปิด Console ได้เท่านั้น</p>
+      <ol>
+        <li><b>สำรองไฟล์เซฟก่อนเสมอ</b> โดยทั่วไปอยู่ที่ <code>C:\Users\&lt;ชื่อผู้ใช้&gt;\Documents\My Games\Skyrim\Saves\</code></li>
+        <li>กด <b>Export reset</b> และ <b>Export addperks</b> แล้วบันทึกเป็น <code>reset.txt</code> และ <code>addperks.txt</code> ในโฟลเดอร์เกม เช่น <code>&lt;Steam&gt;\steamapps\common\Skyrim\</code></li>
+        <li>เปิดเซฟที่ต้องการในเกม กด <b>~</b> เพื่อเปิด Console แล้วพิมพ์ <code>bat reset</code> กด Enter จากนั้นพิมพ์ <code>bat addperks</code> แล้วกด Enter</li>
+      </ol>
+      <h2>ข้อควรรู้</h2>
+      <p><b>คำเตือน:</b> <code>reset.txt</code> จะล้าง Perk เดิมทั้งหมด ก่อนให้ <code>addperks.txt</code> ใส่ Perk ตาม build ใหม่ การใช้คำสั่ง Console อาจกระทบเซฟ ม็อด หรือ achievements จึงควรสำรองเซฟก่อนทุกครั้ง</p>
+      <p>สคริปต์ปรับเลเวลและ Perk ที่จำเป็น แต่ไม่ปรับค่า Health, Magicka หรือ Stamina หากต้องการปรับเอง ใช้คำสั่ง เช่น <code>player.setav health 500</code></p>
+      <p><a href="index.html">← กลับไปหน้า Perk Builder</a></p>
+      </article>
+      <div class="footer">
+      <a href="https://github.com/jason2071/skyrim-builder">GitHub Project</a><span>•</span><a href="https://github.com/chrizel/skyrim">Original project</a>
+      <p>
+      Copyright &copy; 2022 by Christian Zeller
+      </p>
+      <p>
+      Skyrim is a registered trademark of <a href="http://www.bethsoft.com/" target="_blank">Bethesda Softworks</a>.
+      </p>
+      </div>
+      </main>
+    </body>
+</html>
