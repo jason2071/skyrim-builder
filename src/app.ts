@@ -745,7 +745,7 @@ document.addEventListener("DOMContentLoaded", () => {
     downloadScript("addperks.txt", getAddPerksCode());
   });
   document.getElementById('help')?.addEventListener("click", () => {
-    window.location.assign("respec.html");
+    window.open("respec.html", "_blank", "noopener");
   });
 
   canvas.addEventListener("mousemove", moveHandler);
