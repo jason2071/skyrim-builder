@@ -1,7 +1,6 @@
 import {BitArray} from "./bitarray.js";
 import {Perk, PerkTree, perkTrees} from "./data.js";
-import {thaiDescriptions} from "./descriptions-th.js";
-import {perkDescriptionsTh} from "./perk-descriptions-th.js";
+import {getPerkDescription} from "./translations.js";
 
 let canvas: HTMLCanvasElement | null = null;
 let perkCircleRadius = 3;
@@ -18,7 +17,7 @@ const TREE_HEIGHT = 127;
 export let activePerkLevels: Record<string, number> = {};
 
 const displayDescription = (perk: Perk, description: string): string =>
-  descriptionLanguage === "th" ? perkDescriptionsTh[perk.name] ?? thaiDescriptions[description] ?? description : description;
+  getPerkDescription(perk, description, descriptionLanguage);
 
 // used in unit tests
 export const resetActivePerkLevels = () => {
