@@ -10,6 +10,22 @@ a:hover { color: #f4d899; }
 h1 { color: #f4ead4; font-family: Georgia, serif; font-size: clamp(30px, 5vw, 46px); font-weight: normal; letter-spacing: .02em; margin: 0; text-shadow: 0 2px 14px #000; }
 .subtitle { color: #aeb6bf; margin: 8px 0 0; }
 .header-mark { color: #d7b979; font-size: 42px; line-height: 1; text-shadow: 0 0 22px rgba(215,185,121,.5); }
+.builder-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.builder-tabs a { border: 1px solid rgba(191,205,219,.28); padding: 10px 16px; font-size: 13px; }
+.builder-tabs a[aria-current="page"] { background: #d7b979; border-color: #d7b979; color: #18202a; }
+.ruleset-note { display: grid; gap: 6px; margin: 0 0 18px; font-size: 13px; line-height: 1.5; color: #aeb6bf; }
+.ruleset-note strong { color: #e8e4d8; }
+.export-settings { background: rgba(11,15,21,.72); border: 1px solid rgba(173,187,202,.2); margin-top: 18px; padding: 16px 20px; font-size: 13px; line-height: 1.6; color: #aeb6bf; }
+.export-settings summary { color: #d7b979; cursor: pointer; font-weight: bold; }
+.export-settings code { color: #f4ead4; }
+.plugin-prefixes { display: flex; flex-wrap: wrap; gap: 14px; }
+.plugin-prefixes label { display: grid; gap: 5px; }
+.plugin-prefixes input { background: #10151d; border: 1px solid rgba(191,205,219,.4); color: #f4ead4; font-family: monospace; padding: 8px 10px; width: 100px; }
+#export-error { color: #ffb8a7; }
+.perk-description-panel { background: rgba(11,15,21,.72); border: 1px solid rgba(173,187,202,.2); padding: 16px 20px; margin-top: 18px; color: #dfe5e9; font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+.perk-description-panel h2 { color: #d7b979; font-size: 18px; margin: 0 0 6px; }
+.perk-description-panel p { margin: 6px 0; }
+.perk-description-panel .perk-requirement { color: #aeb6bf; font-size: 12px; }
 .builder { background: rgba(11,15,21,.72); border: 1px solid rgba(173,187,202,.2); box-shadow: 0 24px 60px rgba(0,0,0,.34); }
 .canvas-frame { background: #10151d; line-height: 0; overflow: hidden; }
 canvas { display: block; height: auto; max-width: 100%; width: 100%; }

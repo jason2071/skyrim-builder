@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adamant · How to Respec</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  </head>
+  <body>
+    <main class="guide-shell">
+      <header class="guide-header"><p class="eyebrow">Nordic Souls 3.2.2 · Adamant 6.0.4</p><h1>How to respec</h1><p class="subtitle"><a href="adamant.html">Back to Adamant builder</a></p></header>
+      <article class="guide-content">
+        <h2>Apply your Adamant build</h2>
+        <ol>
+          <li>Make a backup save. This preset includes Hand to Hand, Security, Ascension, and enabled Nordic Souls perk patches; it is not standalone Adamant.</li>
+          <li>Plan your perks, then check each plugin prefix against the <b>Mod Index</b> in MO2’s Plugins tab. Enter light-plugin indices without the colon: <code>FE:0B0</code> becomes <code>FE0B0</code>. The defaults reflect the profile used to extract this data; changing your load order can change these indices.</li>
+          <li>Use <b>Export reset</b> and <b>Export addperks</b> to download <code>reset.txt</code> and <code>addperks.txt</code>.</li>
+          <li>Put both files beside the <code>SkyrimSE.exe</code> launched by your modlist. Nordic Souls uses its <code>Game Root</code> folder. NGVO typically uses <code>Stock Game</code>. Check MO2’s executable configuration for the actual path; the Steam installation may be a different copy.</li>
+          <li>Launch your modlist through MO2, load your save, open the console with <b>~</b>, and run <code>bat reset</code>, followed by <code>bat addperks</code>. Verify the resulting perks before saving.</li>
+        </ol>
+        <p>Reset removes only visible perks represented in this preset, including all their ranks. It leaves hidden passive perks alone and does not uninstall a perk overhaul. Addperks sets selected skills to the planned requirements, which can lower an existing higher skill. Neither script changes character level or refunds unspent perk points.</p>
+        <h2 lang="th">วิธีใช้กับ Nordic Souls</h2>
+        <ol lang="th">
+          <li>สำรองเซฟก่อน แล้วเลือก Perk ในหน้า Adamant ชุดข้อมูลนี้รวม Hand to Hand, Security, Ascension และแพตช์ Perk ที่เปิดใช้ใน Nordic Souls 3.2.2</li>
+          <li>ตรวจเลข <b>Mod Index</b> ของปลั๊กอินในแท็บ Plugins ของ MO2 ให้ตรงกับช่องในหน้าเว็บ เช่น <code>FE:0B0</code> ให้กรอก <code>FE0B0</code> หากเปลี่ยน load order เลขนี้อาจเปลี่ยนตาม</li>
+          <li>ส่งออก <code>reset.txt</code> และ <code>addperks.txt</code> แล้ววางข้าง <code>SkyrimSE.exe</code> ที่ MO2 ใช้เปิดเกม สำหรับ Nordic Souls ให้ตรวจโฟลเดอร์ <code>Game Root</code> ส่วน NGVO มักใช้ <code>Stock Game</code></li>
+          <li>เข้าเกมผ่าน MO2 โหลดเซฟ เปิด Console แล้วพิมพ์ <code>bat reset</code> ตามด้วย <code>bat addperks</code> ตรวจ Perk ที่ได้ก่อนบันทึกเซฟ</li>
+        </ol>
+        <p lang="th">ไฟล์ reset ลบเฉพาะ Perk ที่ปรากฏในชุดข้อมูลนี้ ไม่ลบ Perk แฝง ไม่คืนแต้ม และไม่ใช้แทนการถอนม็อด ส่วน addperks ตั้งค่าสกิลที่เลือกให้เท่ากับระดับที่ build ต้องการ จึงอาจลดสกิลเดิมที่มีระดับสูงกว่า ทั้งสองไฟล์ไม่เปลี่ยนเลเวลตัวละคร</p>
+      </article>
+      <footer class="footer"><div class="footer-links"><a href="https://github.com/jason2071/skyrim-builder">This project on GitHub</a><a href="https://github.com/chrizel/skyrim">Original project by Christian Zeller</a></div><p>Original code © 2022 Christian Zeller. Skyrim is a trademark of Bethesda Softworks.</p></footer>
+    </main>
+  </body>
+</html>
