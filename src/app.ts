@@ -1,13 +1,23 @@
 import {BitArray} from "./bitarray.js";
-import {Perk, PerkTree, perkTrees} from "./data.js";
+import {Perk, PerkTree, perkTrees as vanillaPerkTrees} from "./data.js";
+import {adamantPerkTrees, adamantPluginPrefixes} from "./adamant-data.js";
+import {createAdamantScript} from "./perk-scripts.js";
 import {getPerkDescription} from "./translations.js";
+import {hitPerkCaption, layoutPerkCaptions, PerkCaption} from "./perk-captions.js";
+import {fitPerkPositions} from "./perk-layout.js";
 
 let canvas: HTMLCanvasElement | null = null;
 let perkCircleRadius = 3;
 let hoveredPerk: Perk | undefined = undefined;
+let descriptionPerk: Perk | undefined = undefined;
 let activePerkTreeView: PerkTreeView | undefined = undefined;
 let workspace: Workspace;
 let descriptionLanguage: "en" | "th" = "en";
+const isAdamant = document.documentElement.dataset.builder === "adamant";
+const perkTrees = isAdamant ? adamantPerkTrees : vanillaPerkTrees;
+const buildBitCount = Math.max(255, perkTrees.reduce((total, tree) =>
+  total + tree.perks.reduce((ranks, perk) => ranks + (perk.levels || 1), 0), 0));
+const pluginPrefixes = {...adamantPluginPrefixes};
 
 const TREE_COLS = 3;
 const TREE_PADDING = 5;
@@ -17,7 +27,36 @@ const TREE_HEIGHT = 127;
 export let activePerkLevels: Record<string, number> = {};
 
 const displayDescription = (perk: Perk, description: string): string =>
-  getPerkDescription(perk, description, descriptionLanguage);
+  getPerkDescription(perk, description, descriptionLanguage, isAdamant ? "adamant" : "vanilla");
+
+// Keep the last inspected perk readable while moving to the language picker.
+const updatePerkDescription = (): void => {
+  const details = document.getElementById("perk-details");
+  if (!details || !activePerkTreeView) return;
+  if (hoveredPerk && activePerkTreeView.model.perks.includes(hoveredPerk)) descriptionPerk = hoveredPerk;
+  if (descriptionPerk && !activePerkTreeView.model.perks.includes(descriptionPerk)) descriptionPerk = undefined;
+  details.replaceChildren();
+  details.lang = descriptionLanguage;
+  if (!descriptionPerk) {
+    details.textContent = descriptionLanguage === "th" ? "ชี้หรือคลิก Perk เพื่ออ่านคำอธิบาย" : "Hover or select a perk to read its description.";
+    return;
+  }
+  const perk = descriptionPerk;
+  const rank = Math.max(0, getPerkLevel(perk) - 1);
+  const heading = document.createElement("h2");
+  heading.textContent = getPerkDisplayName(perk);
+  const requirement = document.createElement("p");
+  requirement.className = "perk-requirement";
+  requirement.textContent = `${descriptionLanguage === "th" ? "ระดับสกิลที่ต้องการ" : "Required skill level"}: ${perk.req?.[rank] ?? 0}`;
+  const current = document.createElement("p");
+  current.textContent = displayDescription(perk, perk.desc[rank]);
+  details.append(heading, requirement, current);
+  if (getPerkLevel(perk) > 0 && getPerkLevel(perk) < (perk.levels || 1)) {
+    const next = document.createElement("p");
+    next.textContent = `${descriptionLanguage === "th" ? "Rank ถัดไป" : "Next rank"} (${perk.req?.[rank + 1] ?? 0}): ${displayDescription(perk, perk.desc[rank + 1])}`;
+    details.appendChild(next);
+  }
+};
 
 // used in unit tests
 export const resetActivePerkLevels = () => {
@@ -117,8 +156,8 @@ const countActivePerks = () => {
   return result;
 };
 
-const activeData = (): string => {
-  const bitArray = new BitArray(255);
+export const activeData = (): string => {
+  const bitArray = new BitArray(buildBitCount);
   let i = 0;
 
   for (const perkTree of perkTrees) {
@@ -135,9 +174,9 @@ const activeData = (): string => {
   return bitArray.toString()
 };
 
-const readActiveData = (str: string): void => {
+export const readActiveData = (str: string): void => {
   activePerkLevels = {};
-  const bitArray = new BitArray(255);
+  const bitArray = new BitArray(buildBitCount);
   bitArray.parse(str);
   let i = 0;
   for (const perkTree of perkTrees) {
@@ -245,6 +284,18 @@ class PerkTreeView {
   model: PerkTree;
   frame: Frame;
   scale: number;
+  private captions: PerkCaption[] = [];
+  private layoutModel?: PerkTree;
+  private positions = new Map<Perk, [number, number]>();
+
+  position(perk: Perk): [number, number] {
+    if (!isAdamant || this !== activePerkTreeView) return perk.pos;
+    if (this.layoutModel !== this.model) {
+      this.positions = fitPerkPositions(this.model.perks, (this.frame[2] - 240) / this.scale, (this.frame[3] - 260) / this.scale);
+      this.layoutModel = this.model;
+    }
+    return this.positions.get(perk)!;
+  }
 
   constructor(model: PerkTree, frame: Frame, scale: number) {
     this.model = model;
@@ -259,17 +310,18 @@ class PerkTreeView {
     let maxy = 0;
 
     for (const perk of this.model.perks) {
-      if (perk.pos[0] < minx) {
-        minx = perk.pos[0];
+      const pos = this.position(perk);
+      if (pos[0] < minx) {
+        minx = pos[0];
       }
-      if (perk.pos[0] > maxx) {
-        maxx = perk.pos[0];
+      if (pos[0] > maxx) {
+        maxx = pos[0];
       }
-      if (perk.pos[1] < miny) {
-        miny = perk.pos[1];
+      if (pos[1] < miny) {
+        miny = pos[1];
       }
-      if (perk.pos[1] > maxy) {
-        maxy = perk.pos[1];
+      if (pos[1] > maxy) {
+        maxy = pos[1];
       }
     }
 
@@ -297,8 +349,9 @@ class PerkTreeView {
     const perkSize = perkCircleRadius * this.scale;
     const root = this.root();
     for (const perk of this.model.perks) {
-      const perkX = perk.pos[0] * this.scale + root[0];
-      const perkY = perk.pos[1] * this.scale + root[1];
+      const pos = this.position(perk);
+      const perkX = pos[0] * this.scale + root[0];
+      const perkY = pos[1] * this.scale + root[1];
 
       if (x >= (perkX - perkSize) &&
           x <= (perkX + perkSize) &&
@@ -306,6 +359,9 @@ class PerkTreeView {
           y <= (perkY + perkSize)) {
         return perk;
       }
+    }
+    if (isAdamant && this === activePerkTreeView) {
+      return hitPerkCaption(this.captions, (x - root[0]) / this.scale, (y - root[1]) / this.scale);
     }
   }
 
@@ -332,6 +388,15 @@ class PerkTreeView {
     const root = this.root();
     ctx.translate(root[0], root[1]);
     ctx.scale(this.scale, this.scale);
+    if (isAdamant && captions) {
+      ctx.font = "5.5px Arial";
+      this.captions = layoutPerkCaptions(this.model.perks, perk => ctx.measureText(getPerkDisplayName(perk)).width, {
+        left: (this.frame[0] - root[0]) / this.scale + 4,
+        right: (this.frame[0] + this.frame[2] - root[0]) / this.scale - 4,
+        top: (this.frame[1] + 80 - root[1]) / this.scale,
+        bottom: (this.frame[1] + this.frame[3] - 80 - root[1]) / this.scale
+      }, perk => this.position(perk), 5.5);
+    }
 
     // Draw dependency lines...
     for (const perk of this.model.perks) {
@@ -343,8 +408,8 @@ class PerkTreeView {
           ctx.beginPath();
           ctx.lineWidth = connected ? 1.5 : 0.5;
           ctx.strokeStyle = connected ? 'rgba(100, 150, 230, 1.0)' : 'rgba(100, 150, 230, 0.5)';
-          ctx.moveTo(depPerk.pos[0], depPerk.pos[1]);
-          ctx.lineTo(perk.pos[0], perk.pos[1]);
+          ctx.moveTo(...this.position(depPerk));
+          ctx.lineTo(...this.position(perk));
           ctx.stroke();
         }
       }
@@ -356,16 +421,17 @@ class PerkTreeView {
 
       ctx.beginPath();
       if (perk === hoveredPerk) {
-        ctx.fillStyle = 'rgb(255, 0, 0)';
+        ctx.fillStyle = isAdamant ? '#f4d899' : 'rgb(255, 0, 0)';
       } else {
         ctx.fillStyle = level > 0 ? 'rgba(230, 230, 150, 1.0)' : 'rgba(230, 100, 150, 0.5)';
       }
 
       const radius = perkCircleRadius * (level > 0 ? 1 : 0.5);
-      ctx.arc(perk.pos[0], perk.pos[1], radius, 0, Math.PI*2, true);
+      const pos = this.position(perk);
+      ctx.arc(pos[0], pos[1], radius, 0, Math.PI*2, true);
       ctx.fill();
 
-      if (captions) {
+      if (captions && !isAdamant) {
         ctx.save();
 
         const perkName = getPerkDisplayName(perk);
@@ -388,6 +454,26 @@ class PerkTreeView {
         ctx.fillText(perkName, 0, 0);
         ctx.restore();
       }
+    }
+
+    if (isAdamant && captions) {
+      for (const caption of this.captions) {
+        const perk = caption.perk;
+        const highlighted = perk === hoveredPerk;
+        ctx.beginPath();
+        ctx.strokeStyle = highlighted ? '#f4d899' : 'rgba(215,185,121,.55)';
+        ctx.lineWidth = highlighted ? 0.7 : 0.35;
+        ctx.moveTo(...this.position(perk));
+        ctx.lineTo(caption.endpoint[0], caption.endpoint[1]);
+        ctx.stroke();
+        ctx.fillStyle = 'rgba(0,0,0,.9)';
+        ctx.fillRect(caption.rect.left, caption.rect.top, caption.rect.right - caption.rect.left, caption.rect.bottom - caption.rect.top);
+        ctx.font = "5.5px Arial";
+        ctx.textAlign = "center";
+        ctx.fillStyle = highlighted ? '#f4d899' : getPerkLevel(perk) > 0 ? '#ffffff' : 'rgba(220,220,220,.8)';
+        ctx.fillText(getPerkDisplayName(perk), caption.x, caption.baseline);
+      }
+      ctx.textAlign = "start";
     }
 
     ctx.restore();
@@ -525,9 +611,11 @@ const redraw = (): void => {
   if (clearPerksButton) {
     clearPerksButton.style.display = activePerks === 0 ? "none" : "block";
   }
+  updatePerkDescription();
 };
 
 const getResetCode = (): string => {
+  if (isAdamant) return createAdamantScript(perkTrees, "reset", getPerkLevel, pluginPrefixes);
   let result: string[] = [];
 
   for (const perkTree of perkTrees) {
@@ -552,6 +640,7 @@ const getResetCode = (): string => {
 };
 
 const getAddPerksCode = (): string => {
+  if (isAdamant) return createAdamantScript(perkTrees, "add", getPerkLevel, pluginPrefixes);
   const result: string[] = [];
   result.push(`player.setlevel ${Math.max(1, countActivePerks())}`);
 
@@ -604,6 +693,7 @@ const downHandler = (e: MouseEvent): void => {
   if (activePerkTreeView.hitFrame(x, y)) {
     const perk = activePerkTreeView.perkAtPosition(x, y);
     if (perk) {
+      if (isAdamant) descriptionPerk = perk;
       changePerkLevel(perk, e.button === 2 ? -1 : 1);
       workspace.navigate(`t/${perkTreeId(activePerkTreeView.model)}/${activeData()}`);
       redraw();
@@ -669,7 +759,7 @@ class Workspace {
 
     const hash = window.location.hash;
     if (hash) {
-      const match = hash.match(/t\/(\d+)\/?([^\/]+)?/);
+      const match = hash.match(isAdamant ? /^#a\/ns322\/t\/(\d+)\/?([^\/]+)?$/ : /^#t\/(\d+)\/?([^\/]+)?$/);
       if (match) {
         tree = match[1] || "1";
         data = match[2] || "";
@@ -687,7 +777,7 @@ class Workspace {
   }
 
   navigate(str: string, reload?: boolean): void {
-    window.history.replaceState(null, "", `#${str}`);
+    window.history.replaceState(null, "", `#${isAdamant ? "a/ns322/" : ""}${str}`);
 
     if (reload) {
       this.load();
@@ -737,15 +827,46 @@ document.addEventListener("DOMContentLoaded", () => {
       languageSelect.blur();
     });
   }
-  document.getElementById('download-reset')?.addEventListener("click", () => {
-    downloadScript("reset.txt", getResetCode());
-  });
-  document.getElementById('download-addperks')?.addEventListener("click", () => {
-    downloadScript("addperks.txt", getAddPerksCode());
-  });
+  const exportScript = (filename: string, generate: () => string): void => {
+    try {
+      downloadScript(filename, generate());
+      const error = document.getElementById("export-error");
+      if (error) error.textContent = "";
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      const status = document.getElementById("export-error");
+      if (status) status.textContent = message;
+    }
+  };
+  document.getElementById('download-reset')?.addEventListener("click", () => exportScript("reset.txt", getResetCode));
+  document.getElementById('download-addperks')?.addEventListener("click", () => exportScript("addperks.txt", getAddPerksCode));
   document.getElementById('help')?.addEventListener("click", () => {
-    window.open("respec.html", "_blank", "noopener");
+    window.open(isAdamant ? "respec-adamant.html" : "respec.html", "_blank", "noopener");
   });
+
+  const prefixFields = document.getElementById("plugin-prefixes");
+  if (isAdamant && prefixFields) {
+    const params = new URLSearchParams(window.location.search);
+    for (const plugin of Object.keys(pluginPrefixes).filter(plugin => plugin !== "Update.esm")) {
+      const key = `prefix-${plugin}`;
+      pluginPrefixes[plugin] = params.get(key) ?? pluginPrefixes[plugin];
+      const label = document.createElement("label");
+      label.textContent = plugin;
+      const input = document.createElement("input");
+      input.value = pluginPrefixes[plugin];
+      input.setAttribute("aria-label", `${plugin} load-order prefix`);
+      input.maxLength = 5;
+      input.spellcheck = false;
+      input.addEventListener("input", () => {
+        pluginPrefixes[plugin] = input.value.trim().toUpperCase();
+        const url = new URL(window.location.href);
+        url.searchParams.set(key, pluginPrefixes[plugin]);
+        window.history.replaceState(null, "", url);
+      });
+      label.appendChild(input);
+      prefixFields.appendChild(label);
+    }
+  }
 
   canvas.addEventListener("mousemove", moveHandler);
   canvas.addEventListener("mousedown", downHandler);

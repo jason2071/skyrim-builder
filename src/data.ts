@@ -7,6 +7,8 @@ export interface Perk {
   captionOffset?: [number, number];
   deps?: number[];
   id: string[];
+  // Stable plugin-local IDs for modded perks; runtime prefixes vary by load order.
+  forms?: {plugin: string, formId: string, light?: boolean}[];
 }
 
 export interface PerkTree {

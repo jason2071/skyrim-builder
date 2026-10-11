@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-builder="adamant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adamant Perk Builder · Nordic Souls 3.2.2</title>
+    <script type="module" src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header"><div><p class="eyebrow">Simonrim · Nordic Souls 3.2.2</p><h1>Adamant Perk Builder</h1><p class="subtitle">Plan your build with Adamant 6.0.4, Hand to Hand, and Ascension.</p></div><div class="header-mark" aria-hidden="true">✦</div></header>
+      <nav class="builder-tabs" aria-label="Perk ruleset"><a href="index.html">Vanilla</a><a href="adamant.html" aria-current="page">Adamant · Nordic Souls</a></nav>
+      <div class="ruleset-note"><strong>18 skills · 217 perks · 320 ranks</strong><span>Nordic Souls 3.2.2 profile, including its enabled perk patches. English and Thai descriptions.</span><span>Left-click to add a rank; right-click to remove. Your build is saved in this page’s URL.</span></div>
+      <section class="builder" aria-label="Adamant perk builder">
+        <div class="canvas-frame"><canvas id="canvas" width="1000" height="800" aria-label="Select a skill tree, then click perks to plan your build"></canvas></div>
+        <div class="toolbar">
+          <div class="toolbar-actions toolbar-actions--left"><div class="perk-counter"><span>Active Perks:</span><strong id="active-perks">0</strong></div><button id="clear-perks">Clear all</button></div>
+          <div class="toolbar-actions toolbar-actions--right">
+            <label class="language-picker" for="description-language">Descriptions
+              <select id="description-language" aria-label="Perk description language"><option value="en">English</option><option value="th">ไทย</option></select>
+            </label>
+            <button id="download-addperks">Export addperks</button><button id="download-reset">Export reset</button><button id="help">How to respec</button>
+          </div>
+        </div>
+      </section>
+      <section id="perk-details" class="perk-description-panel" aria-label="Perk description">Hover or select a perk to read its description.</section>
+      <details class="export-settings" open>
+        <summary>Console export · check your load order</summary>
+        <p>These defaults come from the installed Nordic Souls profile. Before using exports, check the <b>Mod Index</b> column in MO2’s Plugins tab. For example, <code>33</code> or <code>FE:0B0</code> (enter <code>FE0B0</code>). Changing these fields also updates your build link.</p>
+        <div id="plugin-prefixes" class="plugin-prefixes"></div>
+        <p><code>reset.txt</code> removes the visible perks in this preset. <code>addperks.txt</code> sets selected skills to the required levels and adds your selected perks. Neither script changes character level or refunds perk points. Keep a backup save.</p>
+        <p id="export-error" role="alert"></p>
+      </details>
+      <footer class="footer">
+        <div class="footer-links"><a href="https://github.com/jason2071/skyrim-builder">This project on GitHub</a><a href="https://github.com/chrizel/skyrim">Original project by Christian Zeller</a></div>
+        <p>Original code © 2022 Christian Zeller. Skyrim is a trademark of Bethesda Softworks.</p>
+        <p>Adamant by <a href="https://www.nexusmods.com/skyrimspecialedition/mods/30191">Simon Magus</a>. Preset: <a href="https://github.com/Geborgen/nordic-souls">Nordic Souls</a> 3.2.2. Not an official modlist tool.</p>
+      </footer>
+    </main>
+  </body>
+</html>

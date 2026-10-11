@@ -1,0 +1,661 @@
+{
+  "preset": "Nordic Souls 3.2.2",
+  "adamantVersion": "6.0.4",
+  "profile": "Nordic Souls - Community Shaders",
+  "sources": [
+    {
+      "plugin": "Skyrim.esm",
+      "sha256": "2bbc77fdec35a70ef96b710f8c525e50a1db9e63e11a391a0eb9ee8f56d36107",
+      "records": 524
+    },
+    {
+      "plugin": "Update.esm",
+      "sha256": "5f2985b205ea57428164b47e1a5df57f9b5a1ac0399d4c8b5cf30fc0a60fb008",
+      "records": 17
+    },
+    {
+      "plugin": "Dawnguard.esm",
+      "sha256": "6b7efe806420eca632c86dff3f9c8eb38c55dcec960bc301e8f217b71415a564",
+      "records": 59
+    },
+    {
+      "plugin": "HearthFires.esm",
+      "sha256": "70e0d5d6dc42224349d33e8c7bca73da447463f671cacc9c15fc0273c93e0008",
+      "records": 1
+    },
+    {
+      "plugin": "Dragonborn.esm",
+      "sha256": "3b8bf5ead27337f829fa4d474f0363324124a9696d33fe1aee7b01262eff5bd1",
+      "records": 74
+    },
+    {
+      "plugin": "unofficial skyrim special edition patch.esp",
+      "sha256": "2df73db3622005e04470e3603f804e2fd855ae932a9847073f386bd8013e9d98",
+      "records": 131
+    },
+    {
+      "plugin": "unofficial skyrim creation club content patch.esl",
+      "sha256": "7879de9a01f2c06591819867cc8174dd855909de03714602884b01f026d7e25a",
+      "records": 2
+    },
+    {
+      "plugin": "Unofficial Skyrim Modders Patch.esp",
+      "sha256": "121ea20a73b6f1c8a946d4e64c727289e16e96f6a09ca8c4e8841d372e06e3eb",
+      "records": 1
+    },
+    {
+      "plugin": "BSAssets.esm",
+      "sha256": "6917c5f51bd5f2de92c4b1b9f013abf3d39a42b9eebd66c2ddb81395be25d6af",
+      "records": 5
+    },
+    {
+      "plugin": "BSHeartland.esm",
+      "sha256": "07583bb0d8e66a2b22c91d35d469ffe0fd26850f0c65b570adff84d88f518ec7",
+      "records": 5
+    },
+    {
+      "plugin": "Skyrim Extended Cut - Saints and Seducers.esp",
+      "sha256": "f349146f69796f8f02af6715d6bb9b025817bca9b9103a8185923af997da8657",
+      "records": 1
+    },
+    {
+      "plugin": "Olenveld.esp",
+      "sha256": "5fe5d9a4baec5470cbd9839eb2d1e704931cb73f4816faa03b79686825307671",
+      "records": 1
+    },
+    {
+      "plugin": "Vigilant.esm",
+      "sha256": "15f7026720f13121a34ac1bf3ac2cdf1aa94f87d5bb1c36582192b5defac1172",
+      "records": 102
+    },
+    {
+      "plugin": "Unslaad.esm",
+      "sha256": "1ef3b353544a1b998db39aa360fa335f7e782b263cd5414de5b91eea8e51e5fc",
+      "records": 74
+    },
+    {
+      "plugin": "Siege at Icemoth.esp",
+      "sha256": "5314e9ec3558b16033b06315a99bfca7a02b1bb27d9e901912256edc44438caf",
+      "records": 1
+    },
+    {
+      "plugin": "FalkreathShades.esp",
+      "sha256": "a1b33e0df4077ea2d5983045f5d711af3b52946c146e2d9c47342df8d63f1ee2",
+      "records": 1
+    },
+    {
+      "plugin": "AdoptionAndMovingFix.esp",
+      "sha256": "8caa6f8d8f5a6b1061a95611390ae26b02a833df0b242f8ecb43b2393dc91721",
+      "records": 1
+    },
+    {
+      "plugin": "SurvivalModeImproved.esp",
+      "sha256": "42ca345029734522130f3fe7c1fe0dad645f04f5eb271da2d226662701fc20c2",
+      "records": 3
+    },
+    {
+      "plugin": "Camping Plus Plus.esp",
+      "sha256": "1442d07e9a616eeebac5098cf82ed30d8d08958b6d4de0df3343b0dc85bb2940",
+      "records": 15
+    },
+    {
+      "plugin": "UnarmedBehaviors.esp",
+      "sha256": "76e72fe630e2194fe20718360c41515f71883a7483bca761a9c528f23de6185e",
+      "records": 1
+    },
+    {
+      "plugin": "Critical Hit VFX.esp",
+      "sha256": "5258e47eee0d7f483f84c902cc5e8f8fc0f385e2b1fece8f792a9b5b81c4915c",
+      "records": 2
+    },
+    {
+      "plugin": "MysticismMagic.esp",
+      "sha256": "a40eba3b9ed372983b563f16a508b336b9322d1c384e4ff6cc80fe2959a1c6e0",
+      "records": 26
+    },
+    {
+      "plugin": "Adamant.esp",
+      "sha256": "88903af1b94d089858abafbc13bd6172aa1c37e1303cc3fecc0b6fc988ac11a7",
+      "records": 509
+    },
+    {
+      "plugin": "AdamantCrossbows.esp",
+      "sha256": "0ac3c8e4fc2a2056bf8308195e46c4578c025b30b5ea957da7eb4e823b73a2fc",
+      "records": 6
+    },
+    {
+      "plugin": "AdamantSmithing.esp",
+      "sha256": "03438b005aae65624b8176db0dc476d5d37221e33c7abf40745b5bb9e4968e10",
+      "records": 1
+    },
+    {
+      "plugin": "SimonrmSaintsSeducersSmithing.esp",
+      "sha256": "c2f1aa50151dd5bf9a20017ab1ec4b6d115b371b7f81d3add019f4065787592f",
+      "records": 3
+    },
+    {
+      "plugin": "HandtoHand.esp",
+      "sha256": "e8d09810bda6e5ce541ad77cb6b53e27b3a75ca636606b001459bfac71a348d9",
+      "records": 35
+    },
+    {
+      "plugin": "HandToHandLocksmith.esp",
+      "sha256": "a77a296807da2ff1c8c91e442037e15e9eb43b72066b5f20f0c4c72a4236a953",
+      "records": 1
+    },
+    {
+      "plugin": "Ascension.esp",
+      "sha256": "6f56a24ec634f7a55e4a5afaf73110d9ed83cb720d1a73ff0612e2eb8ad46266",
+      "records": 12
+    },
+    {
+      "plugin": "Adamant - Ascension 1 Patch.esp",
+      "sha256": "cd991d17bec6f1bc07dd7d0872ef45d92de88b326d21668dd82c072534e8d6a7",
+      "records": 4
+    },
+    {
+      "plugin": "Aetherius.esp",
+      "sha256": "11b168cd02fd1d16a175877708f887bd8c796fc6b9de8f928286db93e82c246a",
+      "records": 6
+    },
+    {
+      "plugin": "Mundus.esp",
+      "sha256": "9a15a1a3ba048e4bce166762fb3148b10e339ddeade1b466b69a1887c4d00552",
+      "records": 9
+    },
+    {
+      "plugin": "AdamantConjuration.esp",
+      "sha256": "19b683f1a402efbc64d8fdbf102429852f0125b04883aaa87935735bce7eee12",
+      "records": 14
+    },
+    {
+      "plugin": "Apprentice.esp",
+      "sha256": "51e3d545890fb30ebe18fbae5cfb80baf0aeb99d1f9a7795c1332bffd2f934ad",
+      "records": 72
+    },
+    {
+      "plugin": "ApprenticeAetherius.esp",
+      "sha256": "5ca3acd0f3d240599ce15b8274a461e690704202c1d92fbfa910431d08fd4a7b",
+      "records": 4
+    },
+    {
+      "plugin": "Scion.esp",
+      "sha256": "8afa4939b65ecb3405905580be134ef0a8ca5187dac71b25677796ad381d4daf",
+      "records": 62
+    },
+    {
+      "plugin": "Manbeast.esp",
+      "sha256": "a43c687cbda876f7417a918de3e247b8e44f4f78e76171fb3806c0a9a5042fda",
+      "records": 44
+    },
+    {
+      "plugin": "BladeAndBlunt.esp",
+      "sha256": "fcd198027e87280cd598eed15d457818cbb32208c9827809db0587baca5de585",
+      "records": 57
+    },
+    {
+      "plugin": "AdamantBlade.esp",
+      "sha256": "dd56127015675cea3b46d08cede3769d16355bed9b958d511fbe52d4a5119326",
+      "records": 12
+    },
+    {
+      "plugin": "PowerAttackSpeed.esp",
+      "sha256": "9c467bfbee4ce6042fd42610f6906a63cfbefdb016fbdc54e05291ac5729b50c",
+      "records": 3
+    },
+    {
+      "plugin": "SimonrimSpellSpeed.esp",
+      "sha256": "0ce97adc3443031936ef2f14567216d765cb6d3bfaafac2c1d51f411f96fece4",
+      "records": 5
+    },
+    {
+      "plugin": "Thaumaturgy.esp",
+      "sha256": "3d1a1e2d2cf0d9b79b14574ff6e6b08cd2f4f188f6178f71c3f9b0b590a17e08",
+      "records": 27
+    },
+    {
+      "plugin": "Stormcrown.esp",
+      "sha256": "8e2884bda817429af24d49b24e5b1dfc464caec2615439e671015e6e852e9254",
+      "records": 37
+    },
+    {
+      "plugin": "Pilgrim.esp",
+      "sha256": "40ea0f222719620eadbfef8829bc4a8300065c8762f44c4cb32be241c8ef5ae8",
+      "records": 79
+    },
+    {
+      "plugin": "Sorcerer.esp",
+      "sha256": "9ce7a600365e826720d3e231dd6c9ad3f320e14914ff971adc16e979b69fad10",
+      "records": 252
+    },
+    {
+      "plugin": "Arachnomancy.esp",
+      "sha256": "34b84d4b0b134cd3e46d8f05503c05b7e0b0e5d67ec024adea0baf5204510299",
+      "records": 2
+    },
+    {
+      "plugin": "Artificer.esp",
+      "sha256": "d76fbc070ccea7998f99ff25270964b32f4bc0334ec04c13b346dfaba55312d6",
+      "records": 47
+    },
+    {
+      "plugin": "Apothecary.esp",
+      "sha256": "63576eefb83b0285d3d7b0228e8495e504af2025d3f77729aca192b8aa754226",
+      "records": 5
+    },
+    {
+      "plugin": "Gourmet.esp",
+      "sha256": "813bbc2e270cba3db018abc586cb3659a9d54f26ce98bdcee95a220ee0969b61",
+      "records": 61
+    },
+    {
+      "plugin": "GourmetFishing.esp",
+      "sha256": "e2f0887606ecbc2f68b78212e085697950653681d86808b13790ee016904cd43",
+      "records": 9
+    },
+    {
+      "plugin": "GourmetSurvival.esp",
+      "sha256": "dd80743cb6765a835662810880a9e1e1132573c615d6adc13837f2d30d79f70c",
+      "records": 10
+    },
+    {
+      "plugin": "GourmetUSSEP.esp",
+      "sha256": "123f6278577719fedffab320b27c324effd20713371a36df4e7d9762962bc24f",
+      "records": 6
+    },
+    {
+      "plugin": "GourmetECSS.esp",
+      "sha256": "4afd307b62e06be9ac11f9ad25d7fc381634aaa67aaa2fac58f8674dddffecfd",
+      "records": 1
+    },
+    {
+      "plugin": "Starfrost.esp",
+      "sha256": "a8f2651f7ff8662bbbb5e28758ce8aeebedfe273766d933de03bc5d80337843a",
+      "records": 18
+    },
+    {
+      "plugin": "Journeyman.esp",
+      "sha256": "33809a45863c6e1989fe625770add7a6e45a41fa26ff2c18ada4ad535850338d",
+      "records": 1
+    },
+    {
+      "plugin": "Natura.esp",
+      "sha256": "f47dc830dfc3ae321341b6af44eff9ed3bdaed2485847fff3304107ff3ccce82",
+      "records": 17
+    },
+    {
+      "plugin": "Natura - Spriggans.esp",
+      "sha256": "978eff432aaa1172ac209b3c47551d8cac2b49e31cec665ff0a9fdf1a5447409",
+      "records": 15
+    },
+    {
+      "plugin": "Lunaris.esp",
+      "sha256": "e054dc8e8577ec369c6cacbe70b0725bd7929de98a2eb442638c1e302550e90c",
+      "records": 2
+    },
+    {
+      "plugin": "Abyss.esp",
+      "sha256": "f9a6ba504783d9cb54e50aa104378242a82dbeb5e11eee1aff13aaffa35db065",
+      "records": 7
+    },
+    {
+      "plugin": "Bloodmoon.esp",
+      "sha256": "65c55f97bcd80939ec1f9d17c07cf128c02ab742af12bf2c416abe1a4f968096",
+      "records": 8
+    },
+    {
+      "plugin": "Flames of Coldharbour.esp",
+      "sha256": "d99621d2b2a5848ede5c120df1083fdfc66b9197e898f8f614e913112119863b",
+      "records": 3
+    },
+    {
+      "plugin": "Necrom.esp",
+      "sha256": "5dfdebf3107a91055ef6c614921f586d0177fcd9cf1522c7296ad273613ec56d",
+      "records": 2
+    },
+    {
+      "plugin": "SimonRim - Black Book Companions Patch.esp",
+      "sha256": "1e49b1c336ca119c5b7ae802d002687ee4b36370ea45b112fe00278ea8da3ff5",
+      "records": 1
+    },
+    {
+      "plugin": "Stellaris.esp",
+      "sha256": "d95c51ac09ba559a193ca1d7d5925d6f0bec86f28f49498c639fd03526301ad5",
+      "records": 4
+    },
+    {
+      "plugin": "Vulcano.esp",
+      "sha256": "41d59363749ff37293060f1269d58bc12bb4316b7234e7f5995dcb66008901cf",
+      "records": 5
+    },
+    {
+      "plugin": "Arclight.esp",
+      "sha256": "d4749eb20c82a051dd181c3789a315f3623aad3532b62f9ba5e6b06c98ea0d13",
+      "records": 3
+    },
+    {
+      "plugin": "Desecration.esp",
+      "sha256": "750041db222d66d6785f9d91ff9db35ac1ee2333d9739c776d0805163c029dc9",
+      "records": 6
+    },
+    {
+      "plugin": "Arcane.esp",
+      "sha256": "ab22a3879ba7d2f84d3f636b361db1fc0112a3b618b55bbe6837e57fd153236a",
+      "records": 6
+    },
+    {
+      "plugin": "Necrotic.esp",
+      "sha256": "b2a26056030cb5cd5126e118283aec8ab92b63310fdde97467a4d37582443d70",
+      "records": 9
+    },
+    {
+      "plugin": "TKDodgeAddon.esp",
+      "sha256": "bc551eab752037acee31338c9654962438524c28433de9a325e2dac4235c38f1",
+      "records": 5
+    },
+    {
+      "plugin": "AdamantEvasion.esp",
+      "sha256": "d1d52c62d2a2f148606ce5929320e9107a4aa1e6321f3821e367d3d621357e90",
+      "records": 5
+    },
+    {
+      "plugin": "ReadingIsGood.esp",
+      "sha256": "caefa7974bcdb67c102bcc8ba22b978016d6a96f3aaf01325065288335bee811",
+      "records": 2
+    },
+    {
+      "plugin": "StreamlinedFishing.esp",
+      "sha256": "f2556cb32d0ebb05e2a4983c27690b1d59847adc9d7a72a0ea0b45edd20c8f61",
+      "records": 1
+    },
+    {
+      "plugin": "DragonCultPriesthood.esp",
+      "sha256": "2fef859785bb3f10b44dd2ae12647aff59dd79439442d4775d9d016c2694b7f8",
+      "records": 19
+    },
+    {
+      "plugin": "DragonHunting.esp",
+      "sha256": "65e4196825d70f1779bbe5646aabea3b39283b69cd42d1118e627ff37e4fb810",
+      "records": 4
+    },
+    {
+      "plugin": "Huntsman.esp",
+      "sha256": "315b62ae4ae22a224f162b0e3f76433f92ab49744a128671df493d78dad2e0c6",
+      "records": 1
+    },
+    {
+      "plugin": "DragonWar.esp",
+      "sha256": "47f5d7b6b839f6ea0a1f851780c1828dbfd67e468a4af3fb09c68abb5a049a8b",
+      "records": 3
+    },
+    {
+      "plugin": "DragonWar_Rebalanced.esp",
+      "sha256": "d4c07015988988c1fa6873b2fd304631cea8e2753b4e824262372328bbff5907",
+      "records": 8
+    },
+    {
+      "plugin": "DragonCultDraugr.esp",
+      "sha256": "9a020a6b9e345c61c86244a18b67e535424c7fd91c5fc5fc2adfcb182869fea0",
+      "records": 3
+    },
+    {
+      "plugin": "DragonCultDraugrSimonRim.esp",
+      "sha256": "75318588b3ba9b48f650a103ff6a043b55177dd12e34c35e12acca5e8272eb1c",
+      "records": 19
+    },
+    {
+      "plugin": "King-Priest.esp",
+      "sha256": "32f07ee6bf837e2bd3b23337b7482651acb8d36a383532b758d02d6989f262c5",
+      "records": 7
+    },
+    {
+      "plugin": "Bandit War.esp",
+      "sha256": "c61d275fda5853d925ea61ca39258a94ab8143166b0819c531ecc7ed793e8d7a",
+      "records": 21
+    },
+    {
+      "plugin": "Bandit War - Simonrim.esp",
+      "sha256": "fdacac6f3d4ad2c26841bd8a55e856f3a2f75124883941b6ee17e4066f688e84",
+      "records": 22
+    },
+    {
+      "plugin": "Madmen.esp",
+      "sha256": "e5a7b3506deb1c8c4aa0f0040b0b2448dec2b0c74c364bdfcec867aaa826029d",
+      "records": 24
+    },
+    {
+      "plugin": "Madmen - Simonrim.esp",
+      "sha256": "fe1ef3b82924c1d062712568b692c4b4540b1410f9b5929d2a115e4b3f0d2273",
+      "records": 1
+    },
+    {
+      "plugin": "Masterwork - Dead Man's Dread.esp",
+      "sha256": "94618f443a323e26cf7fbf4308d4cc8d57a5696c64fbf19699586065abbcdcd9",
+      "records": 1
+    },
+    {
+      "plugin": "Masterwork - Fishing.esp",
+      "sha256": "63311cef2f427229639b3c485e73e4ada7c43a08e18f5581a04e26c7eb5cf816",
+      "records": 2
+    },
+    {
+      "plugin": "Masterwork - Forgotten Seasons.esp",
+      "sha256": "6819ea2cec1eb57cb4dd3551c9c2c5a80ef883c1cc37003b71b4770605c73141",
+      "records": 1
+    },
+    {
+      "plugin": "Masterwork - Gallows Hall.esp",
+      "sha256": "27c4aabc747a5e9b9d4dd13f7a3cd7ee67ed19663f5fe5b849f03ef13ca8a34f",
+      "records": 1
+    },
+    {
+      "plugin": "Masterwork - Ghosts of the Tribunal.esp",
+      "sha256": "83166986194383a67d7099bf2133bffa5442e49d462def61d6fbda47bfe1829f",
+      "records": 1
+    },
+    {
+      "plugin": "Masterwork - Spell Knight Armor.esp",
+      "sha256": "0a053131053b3b00c73b632f0ec479c3d8a8e33acc747a7aa6259d85771cc4b5",
+      "records": 2
+    },
+    {
+      "plugin": "Masterwork - The Arms of Chaos.esp",
+      "sha256": "61b641f31fdecf498974eb51ff745011d87f3dc29f46b44b405938db1c8a52e8",
+      "records": 1
+    },
+    {
+      "plugin": "Masterwork - The Crusader's Relics.esp",
+      "sha256": "a3736069f1130ca285a5454f544d08b3cee18bcbfd751f9e3524df39bd1d5a64",
+      "records": 2
+    },
+    {
+      "plugin": "Wyrmslayer.esp",
+      "sha256": "bf36b2b03422ce6f92782494b4f705c07674e277922cd61246101d56f94f5b9c",
+      "records": 3
+    },
+    {
+      "plugin": "King-Priest - Wyrmstooth Patch.esp",
+      "sha256": "d42ba9c7ac706cd637cd4ec38b66db4c5f297be8368fe68b8e12eb5534e1255b",
+      "records": 1
+    },
+    {
+      "plugin": "Vigilant nerfed rewards.esp",
+      "sha256": "cad623cb75095d4b56384a9c5ae1aa222a045174f632dd5222caf07f9293767e",
+      "records": 14
+    },
+    {
+      "plugin": "VIGILANT - Nerfed Jewelry Magic Effects.esp",
+      "sha256": "4ea5400c6cf9505e524f96f91ea2ee340f339bd65d1d00b10b1a6d9011ddc412",
+      "records": 7
+    },
+    {
+      "plugin": "Demon of Dream - Sorcerer Patch.esp",
+      "sha256": "2dd878688d63468d4fe5b763fe6f2937db7d525e17f26ddf345dcb27893307c3",
+      "records": 3
+    },
+    {
+      "plugin": "BreathingAbyssRemake.esp",
+      "sha256": "9b3aa57227bc62ae97521ffac37588840382a8597f90a86474162917aed52bea",
+      "records": 1
+    },
+    {
+      "plugin": "Katana.esp",
+      "sha256": "56f2dfe01789ee38aa1bd5913411a3304f269e094f85ecc1261b07ba6fdf7a0e",
+      "records": 7
+    },
+    {
+      "plugin": "BPUFXelzazFollower.esp",
+      "sha256": "a47357f4cffd735e0666dc918942c4bb48ffb7a4d16857c626d530ac05004e8b",
+      "records": 1
+    },
+    {
+      "plugin": "HLIORemi.esp",
+      "sha256": "32fc9a334dbc2b25db6292d8feb58a0abbfb8627afd74144f2211c8b43d8e52d",
+      "records": 4
+    },
+    {
+      "plugin": "FA01RedcapFollower.esp",
+      "sha256": "e1eb12b120be7959e8909050faacea13a1e98fedd4e1860c7c1c88c21da05b7f",
+      "records": 1
+    },
+    {
+      "plugin": "Ghosts of the Tribunal - Reduced Cut.esp",
+      "sha256": "8e9ce5b5cb1ea15c256bf740218bcdb0cb444399f84e279218cb50085d461bbe",
+      "records": 1
+    },
+    {
+      "plugin": "JELNordicJewelryReintegrated.esp",
+      "sha256": "bcf0a6516ffec5a446d322c822592ee1f9ab73029d6a58c6cedbb830405b20bf",
+      "records": 1
+    },
+    {
+      "plugin": "RareCuriosBoltsExpanded.esp",
+      "sha256": "37276ce87ff0eddc129cf80069fefeb1231a5f53e8e086ecb9e9c68eede1531f",
+      "records": 1
+    },
+    {
+      "plugin": "Legionary.esp",
+      "sha256": "4a7ac572abbfd606da47bfb619591d4f07b5cee6c41beaab8d9717b6294dfbe8",
+      "records": 2
+    },
+    {
+      "plugin": "Legionary - Sorcerer Patch.esp",
+      "sha256": "89ca35654dfe64f0811d3a6705d5d2b894a0fb5897c0a5b5abdec07311a12831",
+      "records": 2
+    },
+    {
+      "plugin": "AdamantBBSpears.esp",
+      "sha256": "e5a4125a83d220d52bd75698b27f610ed1d4a9ab4e048874d415768f28649752",
+      "records": 8
+    },
+    {
+      "plugin": "Lost Arcana.esp",
+      "sha256": "bed1ce444f0c926c615d06198225910d875c6a613e32c2fb2e9651b3f447850f",
+      "records": 46
+    },
+    {
+      "plugin": "Fearsome Fists - H2H Patch.esp",
+      "sha256": "6244b7ead5d3dbc92f70fbbdcf567fcd039dbfa519f8433d530b03a643531278",
+      "records": 1
+    },
+    {
+      "plugin": "CC Farming - Tweaks and Enhancements.esp",
+      "sha256": "6b1f41ee87e48eaf43780fbb12052baead17d94bb3cdfe7a5c92c7dbcd3c375b",
+      "records": 2
+    },
+    {
+      "plugin": "ImmersiveMiraakDifficulty.esp",
+      "sha256": "7a45845c542c50bbef7f8a187736c15ea543b4db35a6077d71d5b3b829033861",
+      "records": 1
+    },
+    {
+      "plugin": "TheOnlyCureQuestExpansion.esp",
+      "sha256": "e2d669917165db35be6fb04f724ada99d21ce90b5b5fa75c18b3f8c93b5544ca",
+      "records": 1
+    },
+    {
+      "plugin": "Caught Red Handed - Quest Expansion.esp",
+      "sha256": "b33fcbf71aaa51dafcdb8c4c8a21fa0a2074d29fba281aee5a2f6d64b75b6e99",
+      "records": 1
+    },
+    {
+      "plugin": "College Of Winterhold - Quest Expansion.esp",
+      "sha256": "0d11108728c29775e2a94a9edfce9961d17e30206e5d2659aee26c295f426ca0",
+      "records": 1
+    },
+    {
+      "plugin": "The Heart Of Dibella - Quest Expansion.esp",
+      "sha256": "d53d64ea592a6a9785523ab8cb00df2f18355965d8a0817c66f3ef27e399e0e4",
+      "records": 1
+    },
+    {
+      "plugin": "soskeleton.esp",
+      "sha256": "ad376bd30d2f06252a3061d40d635c848e9b9f03366f55052aa0c409451b0afb",
+      "records": 1
+    },
+    {
+      "plugin": "Simple Follower Framework.esp",
+      "sha256": "09ed50f71a6d82ae0ec0b17b988cd08391a8e6983c9e964a5d90685fb7a0bb3a",
+      "records": 1
+    },
+    {
+      "plugin": "Dremora Lines Expansion.esp",
+      "sha256": "fd378a271cf656bb7ab0c73bed228783cf141c5c11da87f09a45356d32228483",
+      "records": 1
+    },
+    {
+      "plugin": "DragonPriestArmor - Enchant Addon.esp",
+      "sha256": "bb612b19dac5dab82d3a321c56473833a7eefdfba784379d7a4e47abbb759c92",
+      "records": 3
+    },
+    {
+      "plugin": "DragonPriestArmor - Enchant Addon - Wyrmstooth.esp",
+      "sha256": "492509b7fee301a60eb95a2663717643b751682dd79cf68e5e94eab84ecd96d4",
+      "records": 1
+    },
+    {
+      "plugin": "Daedric Crusader.esp",
+      "sha256": "ea5cf3a70b438e1c87954e05a0f1574715ae1e72239aa3b388da1c3a1f17eca7",
+      "records": 2
+    },
+    {
+      "plugin": "Kad_MoonMonkRobes.esp",
+      "sha256": "8d9d7489f7ffd683c9e4a904e8f01b5f5d2b4128f87e76cf743b0652f6761026",
+      "records": 1
+    },
+    {
+      "plugin": "Apex_Khajiit.esp",
+      "sha256": "2beaf5ae76340496abbda3823a3de49bcbcafa0a5fff0d2d5321a907f928c895",
+      "records": 1
+    },
+    {
+      "plugin": "NS_AdamantAthleticsOverride.esp",
+      "sha256": "725589a0b643d7e00694e920703280b66f0cb7f933524ead4594b919689316b5",
+      "records": 1
+    },
+    {
+      "plugin": "Gourmet - Bruma.esp",
+      "sha256": "aeead29dbf918fdf92af18b8313bf2d0be1f7b5a72f6d91f6fe3b0e21a59f9d7",
+      "records": 19
+    },
+    {
+      "plugin": "Gourmet - Huntsman.esp",
+      "sha256": "33b43dc46fb95a370807043c56b6783a13dee4fe0cdcdea62b1386af3185374e",
+      "records": 4
+    },
+    {
+      "plugin": "Synthesis - Sorcerer.esp",
+      "sha256": "359581547b5e0e692f8d9934a11c70beea6f6d1f276290815751461d9bfcf2d0",
+      "records": 343
+    }
+  ],
+  "plugins": {
+    "Adamant.esp": "33",
+    "Ascension.esp": "FE0B2",
+    "HandtoHand.esp": "FE0B0",
+    "Skyrim.esm": "00",
+    "Update.esm": "01"
+  },
+  "trees": 18,
+  "perks": 217
+}

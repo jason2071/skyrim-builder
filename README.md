@@ -28,6 +28,8 @@
 
 คลิกสายสกิลทางซ้าย แล้วคลิกซ้ายที่ Perk เพื่อเพิ่ม rank หรือคลิกขวาเพื่อลด rank เลือก `English` หรือ `ไทย` ที่ `Descriptions` (เริ่มต้นเป็น English) ระบบเก็บ build ไว้ใน URL hash จึงคัดลอกลิงก์เพื่อเปิด build เดิมได้
 
+หน้า **Adamant · Nordic Souls** อยู่ที่ `http://localhost:8080/adamant.html` ใช้ข้อมูลจาก Nordic Souls **3.2.2** / Adamant **6.0.4** รวม Hand to Hand, Security, Ascension และแพตช์ที่เปิดใช้อยู่ (18 สายสกิล, 217 Perk, 320 ranks) เลือกคำอธิบายภาษาอังกฤษหรือไทยได้ครบทุก rank และอ่านข้อความเต็มในช่องใต้แผนผัง ลิงก์ build แยกจาก Vanilla และก่อนใช้ไฟล์ส่งออกต้องตรวจเลข Mod Index ใน MO2 ให้ตรงกับช่องในหน้าเว็บ ดูที่มาและวิธีอัปเดตข้อมูลใน [`docs/adamant.md`](docs/adamant.md)
+
 กด `Export reset` และ `Export addperks` เพื่อดาวน์โหลด `reset.txt` และ `addperks.txt` จากนั้นเปิด `How to respec` เพื่อดูขั้นตอนใช้ไฟล์ในเกม คู่มือเปิดในแท็บใหม่และมีทั้ง [English](static/respec.html) กับ [ภาษาไทย](static/respec-th.html) **สำรองเซฟก่อนใช้คำสั่ง Console** เพราะ `reset.txt` ล้าง Perk เดิมก่อนใส่ build ใหม่
 
 ## ตรวจสอบและเผยแพร่
