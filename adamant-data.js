@@ -20,7 +20,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    51.07,
+                    -51.07,
                     4.64
                 ],
                 "id": [
@@ -50,7 +50,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    6.07,
+                    -6.07,
                     -3.57
                 ],
                 "id": [
@@ -83,7 +83,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    30.0,
+                    -30.0,
                     -51.43
                 ],
                 "id": [
@@ -114,7 +114,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    46.79,
+                    -46.79,
                     -104.29
                 ],
                 "id": [
@@ -142,7 +142,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    34.64,
+                    -34.64,
                     -23.21
                 ],
                 "id": [
@@ -173,7 +173,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    55.0,
+                    -55.0,
                     -33.21
                 ],
                 "id": [
@@ -200,7 +200,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    91.07,
+                    -91.07,
                     -3.57
                 ],
                 "id": [
@@ -233,7 +233,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    66.79,
+                    -66.79,
                     -50.0
                 ],
                 "id": [
@@ -272,7 +272,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    67.5,
+                    -67.5,
                     4.64
                 ],
                 "id": [
@@ -302,7 +302,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    79.29,
+                    -79.29,
                     -16.07
                 ],
                 "id": [
@@ -333,7 +333,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    84.64,
+                    -84.64,
                     -65.71
                 ],
                 "id": [
@@ -358,7 +358,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    123.93,
+                    -123.93,
                     -115.0
                 ],
                 "id": [
@@ -383,7 +383,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    133.57,
+                    -133.57,
                     -90.36
                 ],
                 "id": [
@@ -408,7 +408,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    102.14,
+                    -102.14,
                     -131.79
                 ],
                 "id": [
@@ -435,7 +435,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    55.36,
+                    -55.36,
                     -16.43
                 ],
                 "id": [
@@ -466,7 +466,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    52.86,
+                    -52.86,
                     -65.71
                 ],
                 "id": [
@@ -491,7 +491,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    30.71,
+                    -30.71,
                     -130.71
                 ],
                 "id": [
@@ -516,7 +516,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    -11.07,
+                    11.07,
                     -116.79
                 ],
                 "id": [
@@ -543,7 +543,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    -4.29,
+                    4.29,
                     -76.07
                 ],
                 "id": [
@@ -578,7 +578,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    68.57,
+                    -68.57,
                     -24.64
                 ],
                 "id": [
@@ -617,7 +617,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    -5.0,
+                    5.0,
                     -1.0
                 ],
                 "id": [
@@ -647,7 +647,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    32.14,
+                    -32.14,
                     -14.64
                 ],
                 "id": [
@@ -680,7 +680,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    55.36,
+                    -55.36,
                     -45.36
                 ],
                 "id": [
@@ -711,7 +711,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    77.86,
+                    -77.86,
                     -77.14
                 ],
                 "id": [
@@ -736,7 +736,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    76.79,
+                    -76.79,
                     -137.86
                 ],
                 "id": [
@@ -763,7 +763,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    12.14,
+                    -12.14,
                     -33.57
                 ],
                 "id": [
@@ -796,7 +796,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    35.36,
+                    -35.36,
                     -77.14
                 ],
                 "id": [
@@ -829,7 +829,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    -8.57,
+                    8.57,
                     -40.36
                 ],
                 "id": [
@@ -862,7 +862,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    11.43,
+                    -11.43,
                     -88.57
                 ],
                 "id": [
@@ -901,7 +901,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    76.07,
+                    -76.07,
                     1.43
                 ],
                 "id": [
@@ -929,7 +929,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    50.71,
+                    -50.71,
                     -8.93
                 ],
                 "id": [
@@ -954,7 +954,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    47.14,
+                    -47.14,
                     -45.36
                 ],
                 "id": [
@@ -979,7 +979,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    1.79,
+                    -1.79,
                     -71.07
                 ],
                 "id": [
@@ -1004,7 +1004,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    48.57,
+                    -48.57,
                     -102.14
                 ],
                 "id": [
@@ -1029,7 +1029,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    97.5,
+                    -97.5,
                     -12.86
                 ],
                 "id": [
@@ -1054,7 +1054,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    96.79,
+                    -96.79,
                     -49.64
                 ],
                 "id": [
@@ -1079,7 +1079,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    134.29,
+                    -134.29,
                     -81.79
                 ],
                 "id": [
@@ -1104,7 +1104,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    87.14,
+                    -87.14,
                     -103.93
                 ],
                 "id": [
@@ -1131,7 +1131,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    74.29,
+                    -74.29,
                     -28.93
                 ],
                 "id": [
@@ -1170,7 +1170,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    58.93,
+                    -58.93,
                     7.5
                 ],
                 "id": [
@@ -1198,7 +1198,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    27.14,
+                    -27.14,
                     -5.71
                 ],
                 "id": [
@@ -1223,7 +1223,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    13.21,
+                    -13.21,
                     -30.36
                 ],
                 "id": [
@@ -1250,7 +1250,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    -0.36,
+                    0.36,
                     -65.71
                 ],
                 "id": [
@@ -1283,7 +1283,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    0.36,
+                    -0.36,
                     -103.21
                 ],
                 "id": [
@@ -1314,7 +1314,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    20.71,
+                    -20.71,
                     -61.43
                 ],
                 "id": [
@@ -1339,7 +1339,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    32.14,
+                    -32.14,
                     -92.5
                 ],
                 "id": [
@@ -1364,7 +1364,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    93.93,
+                    -93.93,
                     -6.43
                 ],
                 "id": [
@@ -1391,7 +1391,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    113.57,
+                    -113.57,
                     -31.07
                 ],
                 "id": [
@@ -1424,7 +1424,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    123.57,
+                    -123.57,
                     -55.71
                 ],
                 "id": [
@@ -1457,7 +1457,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    118.93,
+                    -118.93,
                     -89.64
                 ],
                 "id": [
@@ -1488,7 +1488,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    98.57,
+                    -98.57,
                     -114.29
                 ],
                 "id": [
@@ -1515,7 +1515,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    80.0,
+                    -80.0,
                     -13.57
                 ],
                 "id": [
@@ -1548,7 +1548,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    90.71,
+                    -90.71,
                     -29.64
                 ],
                 "id": [
@@ -1579,7 +1579,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    96.43,
+                    -96.43,
                     -51.07
                 ],
                 "id": [
@@ -1606,7 +1606,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    91.07,
+                    -91.07,
                     -76.79
                 ],
                 "id": [
@@ -1637,7 +1637,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    74.64,
+                    -74.64,
                     -98.93
                 ],
                 "id": [
@@ -1664,7 +1664,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    59.29,
+                    -59.29,
                     -51.07
                 ],
                 "id": [
@@ -1703,7 +1703,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    56.07,
+                    -56.07,
                     10.36
                 ],
                 "id": [
@@ -1733,7 +1733,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    56.43,
+                    -56.43,
                     -8.21
                 ],
                 "id": [
@@ -1766,7 +1766,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    51.79,
+                    -51.79,
                     -42.86
                 ],
                 "id": [
@@ -1797,7 +1797,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    46.43,
+                    -46.43,
                     -73.21
                 ],
                 "id": [
@@ -1822,7 +1822,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    42.5,
+                    -42.5,
                     -98.21
                 ],
                 "id": [
@@ -1849,7 +1849,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    73.93,
+                    -73.93,
                     -42.5
                 ],
                 "id": [
@@ -1880,7 +1880,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    74.29,
+                    -74.29,
                     -71.07
                 ],
                 "id": [
@@ -1905,7 +1905,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    72.5,
+                    -72.5,
                     -97.86
                 ],
                 "id": [
@@ -1932,7 +1932,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    27.86,
+                    -27.86,
                     -40.71
                 ],
                 "id": [
@@ -1963,7 +1963,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    19.64,
+                    -19.64,
                     -71.79
                 ],
                 "id": [
@@ -1988,7 +1988,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    3.93,
+                    -3.93,
                     -100.36
                 ],
                 "id": [
@@ -2013,7 +2013,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    29.64,
+                    -29.64,
                     -15.71
                 ],
                 "id": [
@@ -2038,7 +2038,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    6.07,
+                    -6.07,
                     -40.0
                 ],
                 "id": [
@@ -2065,7 +2065,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    85.71,
+                    -85.71,
                     -15.71
                 ],
                 "id": [
@@ -2096,7 +2096,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    26.43,
+                    -26.43,
                     1.43
                 ],
                 "id": [
@@ -2121,7 +2121,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    -1.43,
+                    1.43,
                     -30.36
                 ],
                 "id": [
@@ -2148,7 +2148,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    83.93,
+                    -83.93,
                     1.07
                 ],
                 "id": [
@@ -2179,7 +2179,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    93.93,
+                    -93.93,
                     -41.07
                 ],
                 "id": [
@@ -2207,7 +2207,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    95.36,
+                    -95.36,
                     -91.79
                 ],
                 "id": [
@@ -2242,7 +2242,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    4.29,
+                    -4.29,
                     -3.57
                 ],
                 "id": [
@@ -2275,7 +2275,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    -10.36,
+                    10.36,
                     -22.86
                 ],
                 "id": [
@@ -2309,7 +2309,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    48.93,
+                    -48.93,
                     -0.71
                 ],
                 "id": [
@@ -2337,7 +2337,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    52.14,
+                    -52.14,
                     -48.21
                 ],
                 "id": [
@@ -2364,7 +2364,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    28.93,
+                    -28.93,
                     -19.29
                 ],
                 "id": [
@@ -2397,7 +2397,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    17.5,
+                    -17.5,
                     -43.21
                 ],
                 "id": [
@@ -2430,7 +2430,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    81.79,
+                    -81.79,
                     -29.64
                 ],
                 "id": [
@@ -2463,7 +2463,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    27.5,
+                    -27.5,
                     -63.93
                 ],
                 "id": [
@@ -2494,7 +2494,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    53.93,
+                    -53.93,
                     -124.29
                 ],
                 "id": [
@@ -2520,7 +2520,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    25.71,
+                    -25.71,
                     -6.43
                 ],
                 "id": [
@@ -2545,7 +2545,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    8.21,
+                    -8.21,
                     -24.29
                 ],
                 "id": [
@@ -2572,7 +2572,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    85.71,
+                    -85.71,
                     -8.57
                 ],
                 "id": [
@@ -2605,7 +2605,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    77.86,
+                    -77.86,
                     -63.57
                 ],
                 "id": [
@@ -2644,7 +2644,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    51.07,
+                    -51.07,
                     5.36
                 ],
                 "id": [
@@ -2674,7 +2674,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    52.14,
+                    -52.14,
                     -28.21
                 ],
                 "id": [
@@ -2700,7 +2700,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    11.07,
+                    -11.07,
                     -72.14
                 ],
                 "id": [
@@ -2726,7 +2726,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    52.86,
+                    -52.86,
                     -127.14
                 ],
                 "id": [
@@ -2753,7 +2753,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    97.14,
+                    -97.14,
                     -73.21
                 ],
                 "id": [
@@ -2781,7 +2781,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    53.57,
+                    -53.57,
                     -71.43
                 ],
                 "id": [
@@ -2816,7 +2816,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    81.43,
+                    -81.43,
                     -21.07
                 ],
                 "id": [
@@ -2851,7 +2851,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    22.14,
+                    -22.14,
                     -20.71
                 ],
                 "id": [
@@ -2892,7 +2892,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    74.29,
+                    -74.29,
                     2.14
                 ],
                 "id": [
@@ -2920,7 +2920,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    43.57,
+                    -43.57,
                     -18.57
                 ],
                 "id": [
@@ -2945,7 +2945,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    12.14,
+                    -12.14,
                     -48.93
                 ],
                 "id": [
@@ -2970,7 +2970,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    -8.57,
+                    8.57,
                     -81.79
                 ],
                 "id": [
@@ -2995,7 +2995,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    -10.0,
+                    10.0,
                     -124.64
                 ],
                 "id": [
@@ -3022,7 +3022,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    102.5,
+                    -102.5,
                     -19.64
                 ],
                 "id": [
@@ -3055,7 +3055,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    131.07,
+                    -131.07,
                     -44.29
                 ],
                 "id": [
@@ -3086,7 +3086,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    150.0,
+                    -150.0,
                     -75.0
                 ],
                 "id": [
@@ -3111,7 +3111,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    157.5,
+                    -157.5,
                     -125.36
                 ],
                 "id": [
@@ -3144,7 +3144,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    38.0,
+                    -38.0,
                     -2.5
                 ],
                 "id": [
@@ -3172,7 +3172,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    80.0,
+                    -80.0,
                     -26.0
                 ],
                 "id": [
@@ -3197,7 +3197,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    68.93,
+                    -68.93,
                     -42.14
                 ],
                 "id": [
@@ -3222,7 +3222,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    71.5,
+                    -71.5,
                     -71.5
                 ],
                 "id": [
@@ -3249,7 +3249,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    22.5,
+                    -22.5,
                     -29.29
                 ],
                 "id": [
@@ -3282,7 +3282,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    40.71,
+                    -40.71,
                     -53.93
                 ],
                 "id": [
@@ -3315,7 +3315,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    36.43,
+                    -36.43,
                     -85.0
                 ],
                 "id": [
@@ -3346,7 +3346,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    1.33,
+                    -1.33,
                     -23.0
                 ],
                 "id": [
@@ -3371,7 +3371,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    7.14,
+                    -7.14,
                     -40.36
                 ],
                 "id": [
@@ -3396,7 +3396,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    6.79,
+                    -6.79,
                     -67.14
                 ],
                 "id": [
@@ -3421,7 +3421,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    56.43,
+                    -56.43,
                     -28.57
                 ],
                 "id": [
@@ -3454,7 +3454,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    34.29,
+                    -34.29,
                     1.0
                 ],
                 "id": [
@@ -3482,7 +3482,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    10.36,
+                    -10.36,
                     -17.86
                 ],
                 "id": [
@@ -3507,7 +3507,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    21.17,
+                    -21.17,
                     -49.5
                 ],
                 "id": [
@@ -3532,7 +3532,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    -2.83,
+                    2.83,
                     -74.0
                 ],
                 "id": [
@@ -3557,7 +3557,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    12.86,
+                    -12.86,
                     -102.5
                 ],
                 "id": [
@@ -3584,7 +3584,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    59.29,
+                    -59.29,
                     -23.57
                 ],
                 "id": [
@@ -3617,7 +3617,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    40.5,
+                    -40.5,
                     -51.0
                 ],
                 "id": [
@@ -3648,7 +3648,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    65.83,
+                    -65.83,
                     -77.0
                 ],
                 "id": [
@@ -3673,7 +3673,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    48.0,
+                    -48.0,
                     -103.5
                 ],
                 "id": [
@@ -3706,7 +3706,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    56.07,
+                    -56.07,
                     4.64
                 ],
                 "id": [
@@ -3736,7 +3736,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    29.29,
+                    -29.29,
                     -17.86
                 ],
                 "id": [
@@ -3769,7 +3769,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    7.86,
+                    -7.86,
                     -35.36
                 ],
                 "id": [
@@ -3802,7 +3802,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    86.07,
+                    -86.07,
                     -17.86
                 ],
                 "id": [
@@ -3835,7 +3835,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    110.0,
+                    -110.0,
                     -37.5
                 ],
                 "id": [
@@ -3868,7 +3868,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    40.0,
+                    -40.0,
                     -25.71
                 ],
                 "id": [
@@ -3901,7 +3901,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    27.86,
+                    -27.86,
                     -51.0
                 ],
                 "id": [
@@ -3932,7 +3932,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    57.14,
+                    -57.14,
                     -32.86
                 ],
                 "id": [
@@ -3957,7 +3957,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    72.17,
+                    -72.17,
                     -69.64
                 ],
                 "id": [
@@ -3982,7 +3982,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    59.64,
+                    -59.64,
                     -160.0
                 ],
                 "id": [
@@ -4008,7 +4008,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    44.0,
+                    -44.0,
                     -69.64
                 ],
                 "id": [
@@ -4035,7 +4035,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    6.07,
+                    -6.07,
                     -0.71
                 ],
                 "id": [
@@ -4068,7 +4068,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    9.29,
+                    -9.29,
                     -13.93
                 ],
                 "id": [
@@ -4101,7 +4101,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    73.93,
+                    -73.93,
                     -26.07
                 ],
                 "id": [
@@ -4134,7 +4134,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    92.86,
+                    -92.86,
                     -53.57
                 ],
                 "id": [
@@ -4173,7 +4173,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    65.71,
+                    -65.71,
                     -2.5
                 ],
                 "id": [
@@ -4201,7 +4201,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    47.14,
+                    -47.14,
                     -28.21
                 ],
                 "id": [
@@ -4226,7 +4226,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    30.36,
+                    -30.36,
                     -48.21
                 ],
                 "id": [
@@ -4251,7 +4251,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    -2.14,
+                    2.14,
                     -63.93
                 ],
                 "id": [
@@ -4278,7 +4278,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    83.57,
+                    -83.57,
                     -28.21
                 ],
                 "id": [
@@ -4311,7 +4311,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    99.29,
+                    -99.29,
                     -48.57
                 ],
                 "id": [
@@ -4344,7 +4344,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    135.0,
+                    -135.0,
                     -61.79
                 ],
                 "id": [
@@ -4377,7 +4377,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    63.93,
+                    -63.93,
                     -32.5
                 ],
                 "id": [
@@ -4408,7 +4408,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    48.21,
+                    -48.21,
                     -53.57
                 ],
                 "id": [
@@ -4433,7 +4433,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    60.36,
+                    -60.36,
                     -82.86
                 ],
                 "id": [
@@ -4459,7 +4459,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    87.14,
+                    -87.14,
                     -102.86
                 ],
                 "id": [
@@ -4484,7 +4484,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    77.5,
+                    -77.5,
                     -53.57
                 ],
                 "id": [
@@ -4511,7 +4511,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    37.14,
+                    -37.14,
                     -19.64
                 ],
                 "id": [
@@ -4542,7 +4542,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    10.71,
+                    -10.71,
                     -35.36
                 ],
                 "id": [
@@ -4567,7 +4567,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    -10.0,
+                    10.0,
                     -25.36
                 ],
                 "id": [
@@ -4594,7 +4594,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    140.71,
+                    -140.71,
                     -24.64
                 ],
                 "id": [
@@ -4627,7 +4627,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    93.57,
+                    -93.57,
                     -19.29
                 ],
                 "id": [
@@ -4660,7 +4660,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    119.29,
+                    -119.29,
                     -33.93
                 ],
                 "id": [
@@ -4699,7 +4699,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    37.5,
+                    -37.5,
                     5.71
                 ],
                 "id": [
@@ -4727,7 +4727,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    47.14,
+                    -47.14,
                     -12.14
                 ],
                 "id": [
@@ -4752,7 +4752,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    63.21,
+                    -63.21,
                     -43.93
                 ],
                 "id": [
@@ -4777,7 +4777,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    77.5,
+                    -77.5,
                     -71.07
                 ],
                 "id": [
@@ -4805,7 +4805,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    91.07,
+                    -91.07,
                     -97.5
                 ],
                 "id": [
@@ -4838,7 +4838,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    79.64,
+                    -79.64,
                     -18.57
                 ],
                 "id": [
@@ -4871,7 +4871,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    16.07,
+                    -16.07,
                     -18.93
                 ],
                 "id": [
@@ -4902,7 +4902,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    28.21,
+                    -28.21,
                     -31.43
                 ],
                 "id": [
@@ -4927,7 +4927,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    9.64,
+                    -9.64,
                     -50.36
                 ],
                 "id": [
@@ -4952,7 +4952,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    -8.93,
+                    8.93,
                     -70.36
                 ],
                 "id": [
@@ -4985,7 +4985,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    101.43,
+                    -101.43,
                     -13.57
                 ],
                 "id": [
@@ -5013,7 +5013,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    134.29,
+                    -134.29,
                     -38.93
                 ],
                 "id": [
@@ -5038,7 +5038,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    157.86,
+                    -157.86,
                     -57.5
                 ],
                 "id": [
@@ -5063,7 +5063,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    140.0,
+                    -140.0,
                     -70.36
                 ],
                 "id": [
@@ -5088,7 +5088,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    62.5,
+                    -62.5,
                     -32.5
                 ],
                 "id": [
@@ -5113,7 +5113,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    29.64,
+                    -29.64,
                     -48.93
                 ],
                 "id": [
@@ -5138,7 +5138,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    60.36,
+                    -60.36,
                     -57.5
                 ],
                 "id": [
@@ -5163,7 +5163,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    92.5,
+                    -92.5,
                     -57.5
                 ],
                 "id": [
@@ -5188,7 +5188,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    109.29,
+                    -109.29,
                     -72.5
                 ],
                 "id": [
@@ -5214,7 +5214,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    4.64,
+                    -4.64,
                     -61.43
                 ],
                 "id": [
@@ -5239,7 +5239,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    48.93,
+                    -48.93,
                     -72.5
                 ],
                 "id": [
@@ -5266,7 +5266,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    104.29,
+                    -104.29,
                     -44.29
                 ],
                 "id": [
@@ -5305,7 +5305,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    62.14,
+                    -62.14,
                     2.5
                 ],
                 "id": [
@@ -5333,7 +5333,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    46.43,
+                    -46.43,
                     -15.36
                 ],
                 "id": [
@@ -5358,7 +5358,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    33.93,
+                    -33.93,
                     -32.14
                 ],
                 "id": [
@@ -5385,7 +5385,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    50.0,
+                    -50.0,
                     -53.93
                 ],
                 "id": [
@@ -5416,7 +5416,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    100.0,
+                    -100.0,
                     -13.57
                 ],
                 "id": [
@@ -5441,7 +5441,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    104.29,
+                    -104.29,
                     -41.79
                 ],
                 "id": [
@@ -5466,7 +5466,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    73.57,
+                    -73.57,
                     -58.21
                 ],
                 "id": [
@@ -5491,7 +5491,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    51.07,
+                    -51.07,
                     -91.07
                 ],
                 "id": [
@@ -5516,7 +5516,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    82.14,
+                    -82.14,
                     -18.57
                 ],
                 "id": [
@@ -5543,7 +5543,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    83.93,
+                    -83.93,
                     -40.71
                 ],
                 "id": [
@@ -5576,7 +5576,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    63.93,
+                    -63.93,
                     -31.07
                 ],
                 "id": [
@@ -5615,7 +5615,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    60.0,
+                    -60.0,
                     7.86
                 ],
                 "id": [
@@ -5645,7 +5645,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    104.29,
+                    -104.29,
                     -6.79
                 ],
                 "id": [
@@ -5676,7 +5676,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    89.64,
+                    -89.64,
                     -27.14
                 ],
                 "id": [
@@ -5701,7 +5701,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    102.86,
+                    -102.86,
                     -51.43
                 ],
                 "id": [
@@ -5726,7 +5726,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    13.57,
+                    -13.57,
                     -2.86
                 ],
                 "id": [
@@ -5751,7 +5751,7 @@ export const adamantPerkTrees = [
                     40
                 ],
                 "pos": [
-                    -2.86,
+                    2.86,
                     -25.0
                 ],
                 "id": [
@@ -5778,7 +5778,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    32.5,
+                    -32.5,
                     -27.86
                 ],
                 "id": [
@@ -5809,7 +5809,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    15.0,
+                    -15.0,
                     -51.07
                 ],
                 "id": [
@@ -5834,7 +5834,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    16.07,
+                    -16.07,
                     -78.93
                 ],
                 "id": [
@@ -5859,7 +5859,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    48.21,
+                    -48.21,
                     -13.57
                 ],
                 "id": [
@@ -5884,7 +5884,7 @@ export const adamantPerkTrees = [
                     20
                 ],
                 "pos": [
-                    75.0,
+                    -75.0,
                     -13.57
                 ],
                 "id": [
@@ -5917,7 +5917,7 @@ export const adamantPerkTrees = [
                     50
                 ],
                 "pos": [
-                    70.36,
+                    -70.36,
                     2.5
                 ],
                 "id": [
@@ -5947,7 +5947,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    48.21,
+                    -48.21,
                     -27.5
                 ],
                 "id": [
@@ -5980,7 +5980,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    29.64,
+                    -29.64,
                     -52.14
                 ],
                 "id": [
@@ -6011,7 +6011,7 @@ export const adamantPerkTrees = [
                     30
                 ],
                 "pos": [
-                    70.0,
+                    -70.0,
                     -34.29
                 ],
                 "id": [
@@ -6036,7 +6036,7 @@ export const adamantPerkTrees = [
                     80
                 ],
                 "pos": [
-                    53.21,
+                    -53.21,
                     -61.07
                 ],
                 "id": [
@@ -6061,7 +6061,7 @@ export const adamantPerkTrees = [
                     100
                 ],
                 "pos": [
-                    71.79,
+                    -71.79,
                     -179.0
                 ],
                 "id": [
@@ -6087,7 +6087,7 @@ export const adamantPerkTrees = [
                     60
                 ],
                 "pos": [
-                    87.5,
+                    -87.5,
                     -62.5
                 ],
                 "id": [
@@ -6114,7 +6114,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    70.71,
+                    -70.71,
                     -77.86
                 ],
                 "id": [
@@ -6147,7 +6147,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    36.79,
+                    -36.79,
                     -17.14
                 ],
                 "id": [
@@ -6180,7 +6180,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    5.36,
+                    -5.36,
                     -37.14
                 ],
                 "id": [
@@ -6213,7 +6213,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    103.93,
+                    -103.93,
                     -17.86
                 ],
                 "id": [
@@ -6246,7 +6246,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    132.5,
+                    -132.5,
                     -34.64
                 ],
                 "id": [
@@ -6279,7 +6279,7 @@ export const adamantPerkTrees = [
                     70
                 ],
                 "pos": [
-                    91.79,
+                    -91.79,
                     -28.57
                 ],
                 "id": [
@@ -6312,7 +6312,7 @@ export const adamantPerkTrees = [
                     90
                 ],
                 "pos": [
-                    112.14,
+                    -112.14,
                     -54.29
                 ],
                 "id": [
