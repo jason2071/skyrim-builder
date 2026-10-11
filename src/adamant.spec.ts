@@ -38,6 +38,15 @@ describe("Nordic Souls 3.2.2 Adamant data", () => {
     expect(mastery.req).toEqual([10, 50]);
     expect(mastery.desc[1]).toBe("Potions and poisons you make are 50% stronger.");
   });
+
+  test("matches in-game Alchemy orientation with poisons left and potions right", () => {
+    const tree = adamantPerkTrees.find(tree => tree.name === "Alchemy")!;
+    const perk = (name: string) => tree.perks.find(perk => perk.name === name)!;
+    expect(perk("Concentration").pos[0]).toBeLessThan(perk("Alchemy Mastery").pos[0]);
+    expect(perk("Potency").pos[0]).toBeGreaterThan(perk("Alchemy Mastery").pos[0]);
+    expect(perk("Poisoner").pos[0]).toBeLessThan(perk("Apothecary").pos[0]);
+    expect(perk("Chemist").pos[1]).toBeLessThan(perk("Alchemy Mastery").pos[1]);
+  });
 });
 
 describe("Adamant console scripts", () => {

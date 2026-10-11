@@ -176,8 +176,11 @@ def main():
                 next_form = get(record, 'NNAM')
                 form = record['ref'](u32(next_form)) if next_form else None
             parent_indices = [i for i, parent in enumerate(visible) if node['INAM'] in parent['edges']]
+            # AVIF stores horizontal coordinates backwards. PerkTreeUI displays
+            # (maxGrid - XNAM + 1) * scale - HNAM * scale; omit its constant
+            # translation because the canvas centers each tree independently.
             perk = {'name': text(get(perks[node['form']], 'FULL')), 'desc': desc, 'req': req,
-                    'pos': [round((node.get('XNAM', 0) + node.get('HNAM', 0)) * 25, 2), round(-(node.get('YNAM', 0) + node.get('VNAM', 0)) * 25, 2)],
+                    'pos': [round(-(node.get('XNAM', 0) + node.get('HNAM', 0)) * 25, 2), round(-(node.get('YNAM', 0) + node.get('VNAM', 0)) * 25, 2)],
                     'id': [f"{prefixes[r['plugin']]}{r['formId'][3:] if len(prefixes[r['plugin']]) == 5 else r['formId']}" for r in ranks], 'forms': ranks}
             if len(ranks) > 1:
                 perk['levels'] = len(ranks)
